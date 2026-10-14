@@ -1,0 +1,39 @@
+{
+  "source": "docs/figma/p02/raw/desktop-1-1588.design-context.txt и mobile-1-271.design-context.txt, локальные screenshot-референсы P-02",
+  "content": [
+    { "jsonPath": "header", "figmaNodes": ["1:1603", "1:1578"], "notes": "Навигация и видимые подписи. Переходы выключены для демо." },
+    { "jsonPath": "hero", "figmaNodes": ["1:1589", "1:273", "1:1608", "1:296"], "notes": "Только подтвержденный вопрос Q1. Текст строки остается статическим." },
+    { "jsonPath": "prizes", "figmaNodes": ["1:1611", "1:305", "1:2104"], "notes": "Три исходные карточки. В мобильной версии подпись третьей карточки отличается и хранится отдельно." },
+    { "jsonPath": "leaderboard", "figmaNodes": ["1:1940", "1:637"], "notes": "Показанные топ-3 и места 4–10. Баллы — данные макета, не результат игры." },
+    { "jsonPath": "mechanics", "figmaNodes": ["1:2044", "1:756"], "notes": "Тексты о 10 раундах, 10 вопросах и 100 фактах." },
+    { "jsonPath": "finalCta", "figmaNodes": ["1:2067", "1:786"], "notes": "Статический финальный призыв; мобильная кнопка не показана в сохраненном фрейме." },
+    { "jsonPath": "footer", "figmaNodes": ["1:2081", "1:810"], "notes": "Юридические заглушки [email] и [юридическое наименование ЦПР] сохранены. URL не подтверждены, поэтому ссылки демонстрационные." }
+  ],
+  "styles": {
+    "figmaConfirmed": {
+      "colors": ["#f60000", "#e21a1a", "#ff5757", "#e43f3f", "#4353b0", "#4b4b4b", "#f5f5f5", "#242424", "#f1a7a7", "#f1c9c9"],
+      "spacingExamplesPx": [4, 8, 12, 16, 24, 28, 32, 56, 80],
+      "desktopFramePx": [1440, 6421],
+      "mobileFramePx": [375, 6043.59],
+      "avatarRadiusPx": 100
+    },
+    "temporaryFont": "Arial, sans-serif — явно согласовано пользователем; метрики отличаются от RussianRail/FSRAIL в Figma",
+    "engineeringDecisions": [
+      "Контент ограничен max-width 1280px на широких экранах.",
+      "Промежуточный breakpoint 768px, настройки 320px и 1200px выведены из двух сохраненных фреймов, не подтверждены Figma.",
+      "Высота карточек на узких экранах может расти по содержимому.",
+      "CSS focus-visible у кнопок и ссылок — техническое состояние доступности, не Figma Hover/Pressed."
+    ]
+  },
+  "assets": {
+    "manifest": "docs/figma/p02/assets-manifest.json",
+    "heroQuestion": ["hero-signalist-cutout-I1-1608-2813-15834.png", "shared-subtract-I1-1608-2813-15833.svg"],
+    "heroTitleBackdrops": ["hero-frame2131330041-1-1596.svg", "hero-frame2131330041-1-275.svg"],
+    "prizeIllustrations": ["prizes-image-1-330.svg", "prizes-image1-1-579.svg", "final-scroll-group2087328481-1-2106.svg", "final-scroll-group2087328480-1-2359.svg", "prizes-train-landscape-1-1916.png"],
+    "podiumDecorations": ["leaderboard-subtract1-1-2024.svg", "leaderboard-subtract2-1-2031.svg", "leaderboard-subtract3-1-2038.svg", "leaderboard-subtract1-1-671.svg", "leaderboard-subtract2-1-675.svg", "leaderboard-subtract3-1-684.svg"],
+    "mechanicsTimeline": ["mechanics-line205-1-2061.svg", "mechanics-frame2131330124-1-764.svg"],
+    "sectionEndDecorations": ["prizes-vector4560-1-1937.svg", "prizes-vector4559-1-636.svg"],
+    "finalImage": "final-cta-electromechanic-cutout-1-2074.png",
+    "note": "Файлы public/assets/figma/ и их корневые SVG-атрибуты не изменялись. Полные PNG экранов и вырезки применялись только как референсы."
+  }
+}

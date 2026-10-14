@@ -1,0 +1,71 @@
+{
+  "method": "Direct calls to actual TypeScript guard through Node 22 type stripping; no browser or UI test, no test files added",
+  "checks": [
+    {
+      "name": "actual JSON",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "null",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "array",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "missing section",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "wrong question type",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "duplicate menu ID",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "wrong prize array",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "external image",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "parent traversal",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "wrong optional mobile label",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "empty heading",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "missing podium decoration",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "external podium decoration",
+      "expected": false,
+      "actual": false
+    }
+  ],
+  "passed": true
+}

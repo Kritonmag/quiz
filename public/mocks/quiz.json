@@ -1,0 +1,134 @@
+{
+  "header": {
+    "brandText": "ДЛЯ ЛЮДЕЙ ДЕЛА",
+    "brandAlt": "РЖД",
+    "menuLabel": "Меню",
+    "menu": [
+      { "id": "about", "label": "О ПРОЕКТЕ", "href": "#about" },
+      { "id": "prizes", "label": "ПРИЗЫ", "href": "#prizes" },
+      { "id": "rating", "label": "РЕЙТИНГ", "href": "#rating" },
+      { "id": "mechanics", "label": "КАК ЭТО РАБОТАЕТ", "href": "#mechanics" }
+    ],
+    "cta": "ИГРАТЬ"
+  },
+  "hero": {
+    "eyebrow": "ИНТЕРАКТИВНАЯ ИГРА",
+    "titleFirst": "ЖЕЛЕЗНЫЕ",
+    "titleSecond": "ФАКТЫ",
+    "subtitle": "Угадайте, как устроена работа в РЖД, и выиграйте призы!",
+    "question": {
+      "id": "q1",
+      "text": "Правда ли, что сигналист отвечает за безопасность железнодорожников на путях?",
+      "image": "assets/figma/hero-signalist-cutout-I1-1608-2813-15834.png",
+      "imageAlt": "Сигналист в оранжевой каске и сигнальном жилете",
+      "yes": "ДА",
+      "no": "НЕТ"
+    },
+    "ribbon": "ПОДАРОК УЖЕ ЧЕРЕЗ 10 ВОПРОСОВ  •  ПОДАРОК УЖЕ ЧЕРЕЗ 10 ВОПРОСОВ  •",
+    "cta": "НАЧАТЬ ИГРУ"
+  },
+  "prizes": {
+    "eyebrow": "ЧТО МОЖНО ПОЛУЧИТЬ",
+    "titleFirst": "ЧЕМ БОЛЬШЕ ИГРАЕТЕ —",
+    "titleSecond": "ТЕМ БОЛЬШЕ ПРИЗОВ",
+    "intro": "Не знаете ответа? Доверьтесь интуиции и играйте!",
+    "rules": [
+      { "id": "fast", "text": "В первые 10 секунд правильный ответ принесет 1000 баллов. Чем быстрее ответите, тем больше баллов получите!" },
+      { "id": "late", "text": "10 секунд вышло? Можно ответить и после, но за правильный ответ получите только 500 баллов" },
+      { "id": "wrong", "text": "Неправильный ответ — всегда 0 баллов" }
+    ],
+    "cards": [
+      {
+        "id": "guaranteed",
+        "label": "/ ГАРАНТИРОВАННЫЙ ПОДАРОК",
+        "titleFirst": "ПОДАРОЧНЫЙ ПРОМОКОД",
+        "titleSecond": "НА ВПЕЧАТЛЕНИЯ",
+        "description": "После первого раунда каждый участник получит промокод на скидку при бронировании отеля или экскурсии на сайте «РЖД Плюс»",
+        "illustration": "assets/figma/prizes-image-1-330.svg",
+        "illustrationDesktop": "assets/figma/final-scroll-group2087328481-1-2106.svg",
+        "illustrationAlt": "Иллюстрация зданий с красными крышами"
+      },
+      {
+        "id": "knowledge",
+        "label": "/ ПРИЗ ЗА ЗНАНИЯ",
+        "titleFirst": "ПОДАРОЧНЫЙ СЕРТИФИКАТ",
+        "titleSecond": "НА 500 РУБЛЕЙ",
+        "description": "Сертификаты получат 300 участников с лучшими результатами по итогам игры",
+        "illustration": "assets/figma/prizes-image1-1-579.svg",
+        "illustrationDesktop": "assets/figma/final-scroll-group2087328480-1-2359.svg",
+        "illustrationAlt": "Иллюстрация подарка с красным бантом"
+      },
+      {
+        "id": "main",
+        "label": "/ ГЛАВНЫЙ ПРИЗ",
+        "labelMobile": "/ ПРИЗ ЗА ЗНАНИЯ",
+        "titleFirst": "3 СЕРТИФИКАТА",
+        "titleSecond": "НА 50 000 РУБЛЕЙ",
+        "description": "Три участника с максимальным количеством баллов получат по сертификату на путешествие",
+        "illustration": "assets/figma/prizes-train-landscape-1-1916.png",
+        "illustrationDesktop": "assets/figma/prizes-train-landscape-1-1916.png",
+        "illustrationAlt": "Поезд в горном пейзаже"
+      }
+    ],
+    "cta": "ИГРАТЬ СЕЙЧАС"
+  },
+  "leaderboard": {
+    "eyebrow": "ТУРНИРНАЯ ТАБЛИЦА",
+    "titleFirst": "ТОП-10",
+    "titleSecond": "ИГРОКОВ",
+    "top": [
+      { "id": "rank-1", "place": "ПЕРВОЕ МЕСТО", "name": "СВЕТЛАНА КУЛИКОВА", "score": "14 500 БАЛЛОВ", "avatar": "assets/figma/leaderboard-avatar-1-2029.png", "avatarAlt": "Портрет Светланы Куликовой", "decorDesktop": "assets/figma/leaderboard-subtract1-1-2024.svg", "decorMobile": "assets/figma/leaderboard-subtract1-1-671.svg" },
+      { "id": "rank-2", "place": "ВТОРОЕ МЕСТО", "name": "МИХАИЛ НАГОРОВ", "score": "10 000 БАЛЛОВ", "avatar": "assets/figma/leaderboard-avatar-1-2036.png", "avatarAlt": "Портрет Михаила Нагорова", "decorDesktop": "assets/figma/leaderboard-subtract2-1-2031.svg", "decorMobile": "assets/figma/leaderboard-subtract2-1-675.svg" },
+      { "id": "rank-3", "place": "ТРЕТЬЕ МЕСТО", "name": "ЕЛЕНА ДМИТРИЕВА", "score": "9000 БАЛЛОВ", "avatar": "assets/figma/leaderboard-avatar-1-2000.png", "avatarAlt": "Аватар Елены Дмитриевой", "decorDesktop": "assets/figma/leaderboard-subtract3-1-2038.svg", "decorMobile": "assets/figma/leaderboard-subtract3-1-684.svg" }
+    ],
+    "other": [
+      { "id": "rank-4", "place": "4", "name": "КИРИЛЛ ХУСАИНОВ", "score": "8500 БАЛЛОВ", "avatar": "assets/figma/leaderboard-avatar-1-1982.png", "avatarAlt": "Портрет Кирилла Хусаинова" },
+      { "id": "rank-5", "place": "5", "name": "СЕРГЕЙ ЛИТВИНОВ", "score": "8000 БАЛЛОВ", "avatar": "assets/figma/leaderboard-avatar-1-1988.png", "avatarAlt": "Портрет Сергея Литвинова" },
+      { "id": "rank-6", "place": "6", "name": "ДАРЬЯ АНДРЕЕВА", "score": "7500 БАЛЛОВ", "avatar": "assets/figma/leaderboard-avatar-1-1994.png", "avatarAlt": "Портрет Дарьи Андреевой" },
+      { "id": "rank-7", "place": "7", "name": "МАРК ОСТАНИН", "score": "7000 БАЛЛОВ", "avatar": "assets/figma/leaderboard-avatar-1-2000.png", "avatarAlt": "Аватар Марка Останина" },
+      { "id": "rank-8", "place": "8", "name": "ОЛЬГА ДОМАНСКАЯ", "score": "6500 БАЛЛОВ", "avatar": "assets/figma/leaderboard-avatar-1-2000.png", "avatarAlt": "Аватар Ольги Доманской" },
+      { "id": "rank-9", "place": "9", "name": "НАТАЛЬЯ ВЕСНА", "score": "6000 БАЛЛОВ", "avatar": "assets/figma/leaderboard-avatar-1-2012.png", "avatarAlt": "Портрет Натальи Весны" },
+      { "id": "rank-10", "place": "10", "name": "ЕЛИЗАВЕТА МАЛЫШЕВА", "score": "6000 БАЛЛОВ", "avatar": "assets/figma/leaderboard-avatar-1-2000.png", "avatarAlt": "Аватар Елизаветы Малышевой" }
+    ],
+    "cta": "ВСЕ РЕЗУЛЬТАТЫ"
+  },
+  "mechanics": {
+    "eyebrow": "МЕХАНИКА ИГРЫ",
+    "titleFirst": "РЖД БОЛЬШЕ,",
+    "titleSecond": "ЧЕМ КАЖЕТСЯ",
+    "items": [
+      { "id": "rounds", "number": "10", "label": "РАУНДОВ", "description": "Первый подарок уже после первого раунда" },
+      { "id": "questions", "number": "10", "label": "ВОПРОСОВ", "description": "Содержится в каждом раунде" },
+      { "id": "facts", "number": "100", "label": "ФАКТОВ", "description": "О людях, профессиях и технологиях РЖД" }
+    ]
+  },
+  "finalCta": {
+    "titleFirst": "УЗНАВАЙТЕ",
+    "titleBrand": "РЖД",
+    "titleSecond": "С ЖЕЛЕЗНЫМИ ФАКТАМИ",
+    "description": "Начинайте игру, проходите раунды и забирайте подарки",
+    "cta": "НАЧАТЬ ИГРУ",
+    "imageAlt": "Железнодорожница в каске и сигнальном жилете"
+  },
+  "footer": {
+    "linksLabel": "Юридическая информация",
+    "brandText": "ДЛЯ ЛЮДЕЙ ДЕЛА",
+    "brandAlt": "РЖД",
+    "title": "ЖЕЛЕЗНЫЕ ФАКТЫ",
+    "description": "Интерактивный проект о людях, профессиях и технологиях РЖД",
+    "organizerLabel": "Организатор акции:",
+    "organizer": "[юридическое наименование ЦПР]",
+    "supportLabel": "Поддержка:",
+    "support": "[email]",
+    "links": [
+      { "id": "rules", "label": "Правила акции", "href": "#" },
+      { "id": "privacy", "label": "Политика обработки персональных данных", "href": "#" },
+      { "id": "consent", "label": "Согласие на обработку персональных данных", "href": "#" }
+    ],
+    "socials": [
+      { "id": "vk", "label": "ВКонтакте", "href": "#", "icon": "assets/figma/footer-vk-compact-logo2021-present1-1-827.svg" },
+      { "id": "telegram", "label": "Telegram", "href": "#", "icon": "assets/figma/footer-telegram2019-logo1-1-830.svg" }
+    ],
+    "copyright": "©2026"
+  }
+}

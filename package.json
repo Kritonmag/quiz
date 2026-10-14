@@ -1,0 +1,23 @@
+{
+  "name": "quiz-demo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "ng serve",
+    "build": "ng build",
+    "typecheck": "tsc -p tsconfig.app.json --noEmit"
+  },
+  "dependencies": {
+    "@angular/common": "20.3.17",
+    "@angular/compiler": "20.3.17",
+    "@angular/core": "20.3.17",
+    "@angular/platform-browser": "20.3.17",
+    "rxjs": "7.8.2"
+  },
+  "devDependencies": {
+    "@angular/build": "20.3.19",
+    "@angular/cli": "20.3.19",
+    "@angular/compiler-cli": "20.3.17",
+    "typescript": "5.9.3"
+  }
+}

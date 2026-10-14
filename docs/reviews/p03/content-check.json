@@ -1,0 +1,143 @@
+{
+  "normalization": "casefold and whitespace including NBSP; both desktop/mobile contexts, no live MCP",
+  "checks": [
+    {
+      "field": "hero.subtitle",
+      "foundInSavedContext": true
+    },
+    {
+      "field": "hero.question.text",
+      "foundInSavedContext": true
+    },
+    {
+      "field": "prizes.intro",
+      "foundInSavedContext": true
+    },
+    {
+      "field": "finalCta.description",
+      "foundInSavedContext": true,
+      "sourceNode": "1:2079",
+      "normalization": "join JSX text around br"
+    },
+    {
+      "field": "footer.description",
+      "foundInSavedContext": true
+    },
+    {
+      "field": "prizes.rules.fast.text",
+      "foundInSavedContext": true
+    },
+    {
+      "field": "prizes.rules.late.text",
+      "foundInSavedContext": true
+    },
+    {
+      "field": "prizes.rules.wrong.text",
+      "foundInSavedContext": true
+    },
+    {
+      "field": "prizes.cards.guaranteed.description",
+      "foundInSavedContext": true
+    },
+    {
+      "field": "prizes.cards.knowledge.description",
+      "foundInSavedContext": true
+    },
+    {
+      "field": "prizes.cards.main.description",
+      "foundInSavedContext": true
+    },
+    {
+      "field": "mechanics.rounds.description",
+      "foundInSavedContext": true
+    },
+    {
+      "field": "mechanics.questions.description",
+      "foundInSavedContext": true
+    },
+    {
+      "field": "mechanics.facts.description",
+      "foundInSavedContext": true
+    },
+    {
+      "field": "leaderboard.rank-1.name",
+      "foundInSavedContext": true
+    },
+    {
+      "field": "leaderboard.rank-1.score",
+      "foundInSavedContext": true
+    },
+    {
+      "field": "leaderboard.rank-2.name",
+      "foundInSavedContext": true
+    },
+    {
+      "field": "leaderboard.rank-2.score",
+      "foundInSavedContext": true
+    },
+    {
+      "field": "leaderboard.rank-3.name",
+      "foundInSavedContext": true
+    },
+    {
+      "field": "leaderboard.rank-3.score",
+      "foundInSavedContext": true
+    },
+    {
+      "field": "leaderboard.rank-4.name",
+      "foundInSavedContext": true
+    },
+    {
+      "field": "leaderboard.rank-4.score",
+      "foundInSavedContext": true
+    },
+    {
+      "field": "leaderboard.rank-5.name",
+      "foundInSavedContext": true
+    },
+    {
+      "field": "leaderboard.rank-5.score",
+      "foundInSavedContext": true
+    },
+    {
+      "field": "leaderboard.rank-6.name",
+      "foundInSavedContext": true
+    },
+    {
+      "field": "leaderboard.rank-6.score",
+      "foundInSavedContext": true
+    },
+    {
+      "field": "leaderboard.rank-7.name",
+      "foundInSavedContext": true
+    },
+    {
+      "field": "leaderboard.rank-7.score",
+      "foundInSavedContext": true
+    },
+    {
+      "field": "leaderboard.rank-8.name",
+      "foundInSavedContext": true
+    },
+    {
+      "field": "leaderboard.rank-8.score",
+      "foundInSavedContext": true
+    },
+    {
+      "field": "leaderboard.rank-9.name",
+      "foundInSavedContext": true
+    },
+    {
+      "field": "leaderboard.rank-9.score",
+      "foundInSavedContext": true
+    },
+    {
+      "field": "leaderboard.rank-10.name",
+      "foundInSavedContext": true
+    },
+    {
+      "field": "leaderboard.rank-10.score",
+      "foundInSavedContext": true
+    }
+  ]
+}
