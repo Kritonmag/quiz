@@ -8,7 +8,7 @@
     </div>
     <nav class="desktop-nav" [attr.aria-label]="data().menuLabel">
       @for (item of data().menu; track item.id) {
-        <a [href]="item.href" (click)="$event.preventDefault()">{{ item.label }}</a>
+        <a [href]="item.href">{{ item.label }}</a>
       }
     </nav>
     <app-button class="header-cta" [label]="data().cta" />

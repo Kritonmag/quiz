@@ -1,5 +1,5 @@
 *, *::before, *::after { box-sizing: border-box; }
-html { scroll-behavior: auto; }
+html { scroll-behavior: smooth; }
 body { margin: 0; color: var(--ink); font-family: var(--font-main); font-size: var(--body-size); line-height: var(--body-leading); }
 button, a { font: inherit; }
 button { cursor: pointer; }
@@ -9,6 +9,10 @@ h1, h2, h3, p { margin: 0; }
 .eyebrow { font-size: var(--small-size); line-height: 16px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; }
 :focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
 .hero :focus-visible, .site-footer :focus-visible { outline-color: var(--paper); }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
 
 .brand { display: flex; align-items: center; gap: 15px; flex: none; }
 .brand-mark { display: block; width: 66px; height: 40px; overflow: hidden; }
