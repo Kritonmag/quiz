@@ -1,0 +1,31 @@
+{
+  "origin": "Два PNG предоставлены пользователем в PROMPT-018; не получены через Figma MCP и не входят в 350 исходных ассетов P-02",
+  "mapping": "Первое вложение — Q2, второе вложение — Q3",
+  "copyMethod": "Побайтное cp без декодирования, ресэмплинга или правки альфы; cmp подтвердил идентичность",
+  "images": [
+    {
+      "questionId": "q2",
+      "source": "/var/folders/nt/cxvjbsw9705_pdl_83hfbmhc0000gn/T/codex-clipboard-cc958ecb-967a-401b-bd4a-9c20f0f8f6b3.png",
+      "copy": "public/assets/hero-user/station-duty-officer-q2.png",
+      "widthPx": 404,
+      "heightPx": 500,
+      "mode": "8-bit RGBA PNG",
+      "hasAlpha": true,
+      "bytes": 216755,
+      "sourceSha256": "ec3d03b37ff30907ddb8967f337e3ab36defda302c8d7a6c2308a5ec46546784",
+      "copySha256": "ec3d03b37ff30907ddb8967f337e3ab36defda302c8d7a6c2308a5ec46546784"
+    },
+    {
+      "questionId": "q3",
+      "source": "/var/folders/nt/cxvjbsw9705_pdl_83hfbmhc0000gn/T/codex-clipboard-0de6cbcf-b049-4866-b229-73c33c24fafb.png",
+      "copy": "public/assets/hero-user/terminal-duty-officer-q3.png",
+      "widthPx": 350,
+      "heightPx": 504,
+      "mode": "8-bit RGBA PNG",
+      "hasAlpha": true,
+      "bytes": 207169,
+      "sourceSha256": "80f7d0e52bcd0748ecfe11685e731d9d846eb6575fd66762385abcd65e172d76",
+      "copySha256": "80f7d0e52bcd0748ecfe11685e731d9d846eb6575fd66762385abcd65e172d76"
+    }
+  ]
+}

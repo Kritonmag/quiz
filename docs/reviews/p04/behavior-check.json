@@ -1,0 +1,154 @@
+{
+  "method": "Actual TypeScript component classes bundled using existing dev esbuild; Angular DI context; synthetic measurements and event targets; no browser, DOM renderer or CSS engine",
+  "checks": [
+    {
+      "name": "marquee initial count and speed",
+      "passed": true
+    },
+    {
+      "name": "short text fills tablet ribbon",
+      "passed": true
+    },
+    {
+      "name": "long text resize observer recomputes duration",
+      "passed": true
+    },
+    {
+      "name": "hidden document marks marquee paused",
+      "passed": true
+    },
+    {
+      "name": "visible document removes pause flag",
+      "passed": true
+    },
+    {
+      "name": "hero removes listeners and observer",
+      "passed": true
+    },
+    {
+      "name": "destroy before microtask causes no DOM writes",
+      "passed": true
+    },
+    {
+      "name": "desktop reference geometry",
+      "passed": true
+    },
+    {
+      "name": "low mobile preserves stack step",
+      "passed": true
+    },
+    {
+      "name": "first card very tall leaves later cards visible",
+      "passed": true
+    },
+    {
+      "name": "last card very tall remains bottom bounded",
+      "passed": true
+    },
+    {
+      "name": "low desktop bounded stack",
+      "passed": true
+    },
+    {
+      "name": "eight K layout offsets remain bounded",
+      "passed": true
+    },
+    {
+      "name": "orientation change recalculates",
+      "passed": true
+    },
+    {
+      "name": "prize ResizeObserver recalculates",
+      "passed": true
+    },
+    {
+      "name": "copy and runway use configured bounds",
+      "passed": true
+    },
+    {
+      "name": "prizes cleanup leaves no listeners or observers",
+      "passed": true
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "low mobile preserves stack step",
+      "width": 375,
+      "height": 400,
+      "cardHeights": [
+        522,
+        498,
+        498
+      ],
+      "actualTops": [
+        -210,
+        -162,
+        -114
+      ]
+    },
+    {
+      "name": "first card very tall leaves later cards visible",
+      "width": 375,
+      "height": 600,
+      "cardHeights": [
+        900,
+        498,
+        498
+      ],
+      "actualTops": [
+        -316,
+        38,
+        86
+      ]
+    },
+    {
+      "name": "last card very tall remains bottom bounded",
+      "width": 375,
+      "height": 400,
+      "cardHeights": [
+        498,
+        498,
+        900
+      ],
+      "actualTops": [
+        -612,
+        -564,
+        -516
+      ]
+    },
+    {
+      "name": "low desktop bounded stack",
+      "width": 1440,
+      "height": 480,
+      "cardHeights": [
+        480,
+        480,
+        480
+      ],
+      "actualTops": [
+        -156,
+        -86,
+        -16
+      ]
+    },
+    {
+      "name": "eight K layout offsets remain bounded",
+      "width": 7680,
+      "height": 4320,
+      "cardHeights": [
+        480,
+        480,
+        480
+      ],
+      "actualTops": [
+        80,
+        150,
+        220
+      ]
+    }
+  ],
+  "passed": true,
+  "limitations": [
+    "CSS animation playback, real sticky paint, accessibility tree and touch/keyboard were not rendered or observed"
+  ]
+}

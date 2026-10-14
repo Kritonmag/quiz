@@ -1,0 +1,36 @@
+{
+  "source": "docs/figma/p02/REPORT.md и сохраненные desktop/mobile/final-scroll design-context",
+  "figmaFacts": {
+    "marqueePhrase": "ПОДАРОК УЖЕ ЧЕРЕЗ 10 ВОПРОСОВ — текст 1:1610/1:302; направление и скорость движения не получены",
+    "initialPrizeCards": "desktop 1:1613/1:1861/1:1915, 800×480 px, шаг 504 px; mobile начальный поток 1:325/1:574/1:629",
+    "finalPrizeComposition": "1:2105/1:2353/1:2422, y=80/150/220 px внутри статического Final Scroll State 1:2104; PNG финала и Motion отсутствуют",
+    "buttonStates": "сохранены только видимые Default; отдельные Hover/Pressed/Inactive context/PNG недоступны"
+  },
+  "engineeringParameters": {
+    "json": {
+      "hero.ribbonSpeedPxPerSecond": 48,
+      "prizes.sticky.desktopTopPx": 80,
+      "prizes.sticky.desktopStepPx": 70,
+      "prizes.sticky.mobileTopPx": 16,
+      "prizes.sticky.mobileStepPx": 48,
+      "prizes.sticky.bottomGapPx": 16,
+      "prizes.sticky.runwayPx": 260
+    },
+    "validationRanges": {
+      "hero.ribbonSpeedPxPerSecond": "10..300 finite px/s",
+      "prizes.sticky.desktopTopPx": "0..300 finite px",
+      "prizes.sticky.desktopStepPx": "1..150 finite px",
+      "prizes.sticky.mobileTopPx": "0..100 finite px",
+      "prizes.sticky.mobileStepPx": "1..100 finite px",
+      "prizes.sticky.bottomGapPx": "0..100 finite px",
+      "prizes.sticky.runwayPx": "100..2000 finite px"
+    },
+    "cssTokens": ["--ribbon-duration", "--ribbon-copy-gap", "--demo-state-duration", "--demo-hover-offset", "--demo-active-offset", "--demo-active-scale", "--prize-sticky-default-top", "--prize-sticky-runway", "--prize-layer-one", "--prize-layer-two", "--prize-layer-three"],
+    "notes": [
+      "Количество фраз в каждой из двух одинаковых групп вычисляется из ширины видимой ленты и одной фразы; длительность — из ширины группы и скорости JSON. Это не значения Figma Motion.",
+      "Desktop sticky расчет при viewport 800 px и карточках 480 px дает top 80/150/220 px — численно как в сохраненном статическом финальном кадре; реальный рендер не проверен, а сами offsets и runway не подтверждены прототипом Figma.",
+      "Для карточек рассчитываются индивидуальные предельные top по реальной высоте, затем обратный проход сохраняет порядок и заданный шаг даже в низком viewport; отрицательный top позволяет дочитать высокую карточку.",
+      "Все диапазоны валидации, mobile offsets, цвета/движения hover/active и паузы — инженерные решения для демонстрации и доступности."
+    ]
+  }
+}

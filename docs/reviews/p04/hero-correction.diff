@@ -1,0 +1,88 @@
+--- src/app/quiz/hero.component.ts (before PROMPT-016)
++++ src/app/quiz/hero.component.ts (after)
+@@ -1 +1 @@
+-import { AfterViewInit, Component, ElementRef, inject, input, OnDestroy, signal, ViewChild } from '@angular/core';
++import { AfterViewInit, Component, computed, ElementRef, inject, input, OnDestroy, signal, ViewChild } from '@angular/core';
+@@ -20,2 +20,2 @@
+-          <div class="question-card">
+-            <p class="question-text">{{ data().question.text }}</p>
++          <div class="question-card" [class.question-card--without-photo]="currentQuestion().image === null">
++            <p class="question-text" aria-live="polite" aria-atomic="true">{{ currentQuestion().text }}</p>
+@@ -23 +23,3 @@
+-            <div class="signalist-clip"><img [src]="data().question.image" [alt]="data().question.imageAlt"></div>
++            @if (currentQuestion().image; as image) {
++              <div class="signalist-clip"><img [src]="image" [alt]="currentQuestion().imageAlt ?? ''"></div>
++            }
+@@ -25,2 +27,2 @@
+-              <button type="button" class="answer"><img src="assets/figma/shared-vector4558-stroke-I1-1608-2813-15839.svg" alt="">{{ data().question.yes }}</button>
+-              <button type="button" class="answer"><img src="assets/figma/shared-union-I1-1608-2813-15845.svg" alt="">{{ data().question.no }}</button>
++              <button type="button" class="answer" (click)="nextQuestion()"><img src="assets/figma/shared-vector4558-stroke-I1-1608-2813-15839.svg" alt="">{{ currentQuestion().yes }}</button>
++              <button type="button" class="answer" (click)="nextQuestion()"><img src="assets/figma/shared-union-I1-1608-2813-15845.svg" alt="">{{ currentQuestion().no }}</button>
+@@ -50,0 +53,2 @@
++  readonly questionIndex = signal(0);
++  readonly currentQuestion = computed(() => this.data().questions[this.questionIndex()]);
+@@ -57,0 +62,4 @@
++
++  nextQuestion(): void {
++    this.questionIndex.update(index => (index + 1) % this.data().questions.length);
++  }
+--- src/app/quiz/quiz-content.ts (before PROMPT-016)
++++ src/app/quiz/quiz-content.ts (after)
+@@ -5,0 +6 @@
++export interface HeroQuestion { id: string; text: string; image: string | null; imageAlt: string | null; yes: string; no: string }
+@@ -10 +11 @@
+-    question: { id: string; text: string; image: string; imageAlt: string; yes: string; no: string };
++    questions: HeroQuestion[];
+@@ -56,2 +57,7 @@
+-      !textFields(hero['question'], ['id', 'text', 'image', 'imageAlt', 'yes', 'no']) ||
+-      !localAsset(hero['question']['image']) ||
++      !items(hero['questions'], ['text', 'yes', 'no']) || hero['questions'].length !== 3 ||
++      !hero['questions'].every(question =>
++        ['id', 'text', 'yes', 'no'].every(field => question[field].trim().length > 0) &&
++        ((question['image'] === null && question['imageAlt'] === null) ||
++          (typeof question['image'] === 'string' && localAsset(question['image']) &&
++            /\.(png|jpe?g|webp|svg)$/i.test(question['image']) &&
++            typeof question['imageAlt'] === 'string' && question['imageAlt'].trim().length > 0))) ||
+--- public/mocks/quiz.json (before PROMPT-016)
++++ public/mocks/quiz.json (after)
+@@ -19,8 +19,26 @@
+-    "question": {
+-      "id": "q1",
+-      "text": "Правда ли, что сигналист отвечает за безопасность железнодорожников на путях?",
+-      "image": "assets/figma/hero-signalist-cutout-I1-1608-2813-15834.png",
+-      "imageAlt": "Сигналист в оранжевой каске и сигнальном жилете",
+-      "yes": "ДА",
+-      "no": "НЕТ"
+-    },
++    "questions": [
++      {
++        "id": "q1",
++        "text": "Правда ли, что сигналист отвечает за безопасность железнодорожников на путях?",
++        "image": "assets/figma/hero-signalist-cutout-I1-1608-2813-15834.png",
++        "imageAlt": "Сигналист в оранжевой каске и сигнальном жилете",
++        "yes": "ДА",
++        "no": "НЕТ"
++      },
++      {
++        "id": "q2",
++        "text": "Входит ли в обязанности дежурного по станции управление маршрутами?",
++        "image": null,
++        "imageAlt": null,
++        "yes": "ДА",
++        "no": "НЕТ"
++      },
++      {
++        "id": "q3",
++        "text": "Правда ли, что дежурный по вокзалу руководит движением поездов и управляет светофорами на станциях?",
++        "image": null,
++        "imageAlt": null,
++        "yes": "ДА",
++        "no": "НЕТ"
++      }
++    ],
+--- src/styles.css (before PROMPT-016)
++++ src/styles.css (after)
+@@ -50,0 +51 @@
++.question-card--without-photo .question-text { width: calc(100% - 48px); }
+@@ -218,0 +220 @@
++  .question-card--without-photo .question-text { width: calc(100% - 32px); }

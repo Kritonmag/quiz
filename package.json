@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "ng serve",
+    "start": "ng serve --port=4222",
     "build": "ng build",
     "typecheck": "tsc -p tsconfig.app.json --noEmit"
   },

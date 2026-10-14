@@ -1,0 +1,53 @@
+{
+  "baselineCommit": "daff15a",
+  "commands": {
+    "typecheck": {
+      "exitCode": 0
+    },
+    "build": {
+      "exitCode": 0,
+      "rawSize": "190.23 kB",
+      "transferSize": "53.08 kB",
+      "builtAtUtc": "2026-10-14T15:21:40.583Z"
+    },
+    "git diff --check": {
+      "exitCode": 0
+    }
+  },
+  "publishedJson": {
+    "copiedExactly": true,
+    "parametersReplaceableWithoutJsRebuild": true,
+    "jsHashes": {
+      "main-54IJQOVE.js": "5c5741edb7cf4d9e9ed8cb569e97cd9e07111b617ff8a84e395e254856a171e5"
+    },
+    "jsonRestored": true,
+    "browserReloadObserved": false
+  },
+  "behaviorChecks": {
+    "count": 17,
+    "method": "actual methods, synthetic measurements/event targets, no browser render"
+  },
+  "jsonGuardChecks": {
+    "count": 21,
+    "passed": true
+  },
+  "server": {
+    "address": "http://127.0.0.1:4200/",
+    "listeningPid": 12872,
+    "checkedWith": "lsof",
+    "renderObserved": false
+  },
+  "scope": {
+    "figmaMcpCalls": 0,
+    "newDependencies": 0,
+    "newSubagents": 0,
+    "executor": "same /root/implementation_p03, gpt-6-sol/high",
+    "P05Started": false,
+    "P04Committed": false
+  },
+  "limitations": [
+    "Browser origin permission previously rejected; no retry/workaround",
+    "No observed animation loop, sticky paint, DOM/keyboard/touch/accessibility tree",
+    "8K scenario tests arithmetic, not a viewport rendering or physical monitor"
+  ]
+}

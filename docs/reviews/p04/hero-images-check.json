@@ -1,0 +1,110 @@
+{
+  "images": [
+    {
+      "id": "q2",
+      "path": "public/assets/hero-user/station-duty-officer-q2.png",
+      "width": 404,
+      "height": 500,
+      "rgba": true,
+      "byteIdentical": true,
+      "sha256": "ec3d03b37ff30907ddb8967f337e3ab36defda302c8d7a6c2308a5ec46546784"
+    },
+    {
+      "id": "q3",
+      "path": "public/assets/hero-user/terminal-duty-officer-q3.png",
+      "width": 350,
+      "height": 504,
+      "rgba": true,
+      "byteIdentical": true,
+      "sha256": "80f7d0e52bcd0748ecfe11685e731d9d846eb6575fd66762385abcd65e172d76"
+    }
+  ],
+  "jsonChecks": [
+    {
+      "name": "actual JSON all photos",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "external URL",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "parent path",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "unapproved folder",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "nonimage",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "missing alt",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "blank alt",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "mixed null pair",
+      "expected": false,
+      "actual": false
+    }
+  ],
+  "cycles": {
+    "directCalls": 100,
+    "sequenceFirstCycle": [
+      {
+        "id": "q1",
+        "image": "assets/figma/hero-signalist-cutout-I1-1608-2813-15834.png"
+      },
+      {
+        "id": "q2",
+        "image": "assets/hero-user/station-duty-officer-q2.png"
+      },
+      {
+        "id": "q3",
+        "image": "assets/hero-user/terminal-duty-officer-q3.png"
+      },
+      {
+        "id": "q1",
+        "image": "assets/figma/hero-signalist-cutout-I1-1608-2813-15834.png"
+      }
+    ],
+    "finalId": "q2",
+    "allImagesAndAltPresent": true
+  },
+  "all350FigmaHashesUnchanged": true,
+  "Q1GeometryUnchanged": true,
+  "controllerAndPreviousEffectsUnchanged": true,
+  "otherJsonContentUnchanged": true,
+  "userPort4222Preserved": true,
+  "browserVerified": false,
+  "passed": true,
+  "productionCopies": [
+    {
+      "path": "dist/quiz-demo/browser/assets/hero-user/station-duty-officer-q2.png",
+      "matchesSource": true
+    },
+    {
+      "path": "dist/quiz-demo/browser/assets/hero-user/terminal-duty-officer-q3.png",
+      "matchesSource": true
+    }
+  ],
+  "commands": {
+    "typecheckExit": 0,
+    "buildExit": 0,
+    "buildRawSize": "192.66 kB",
+    "diffCheckExit": 0
+  }
+}

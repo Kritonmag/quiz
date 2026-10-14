@@ -1,0 +1,107 @@
+{
+  "method": "Actual HeroComponent instantiated in Angular DI, actual signals/computed and guard; 100 direct calls, no DOM/CSS render",
+  "sequenceFirstTen": [
+    "q1",
+    "q2",
+    "q3",
+    "q1",
+    "q2",
+    "q3",
+    "q1",
+    "q2",
+    "q3",
+    "q1"
+  ],
+  "rapidClicks": 100,
+  "finalQuestion": "q2",
+  "bothButtonsBindToSameMethod": true,
+  "conditionalImageMarkup": true,
+  "jsonChecks": [
+    {
+      "name": "current JSON",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "missing questions",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "empty list",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "only two questions",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "duplicate ID",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "wrong text type",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "blank text",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "blank ID",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "null image with nonnull alt",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "path with null alt",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "missing image",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "external image",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "parent path",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "nonimage path",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "invalid speed regression",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "invalid sticky regression",
+      "expected": false,
+      "actual": false
+    }
+  ],
+  "previousEffectsCodeUnchanged": true,
+  "otherMockContentUnchanged": true,
+  "userPort4222Preserved": true,
+  "questionTextsMatchUserScreenshotTranscription": true,
+  "browserVerified": false,
+  "passed": true
+}

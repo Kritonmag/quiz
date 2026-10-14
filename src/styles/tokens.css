@@ -37,4 +37,15 @@
   --section-title-mobile-size: 32px;
   --section-title-mobile-leading: 36px;
   --heading-leading: 1.06;
+  --ribbon-duration: 12s;
+  --ribbon-copy-gap: 16px;
+  --demo-state-duration: 160ms;
+  --demo-hover-offset: -2px;
+  --demo-active-offset: 1px;
+  --demo-active-scale: .94;
+  --prize-sticky-default-top: 80px;
+  --prize-sticky-runway: 260px;
+  --prize-layer-one: 1;
+  --prize-layer-two: 2;
+  --prize-layer-three: 3;
 }

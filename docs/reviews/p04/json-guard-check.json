@@ -1,0 +1,111 @@
+{
+  "method": "Direct actual TypeScript guard, no browser",
+  "checks": [
+    {
+      "name": "actual JSON",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "missing motion speed",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "zero speed",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "negative speed",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "non finite speed",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "NaN speed",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "speed above upper limit",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "string speed",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "missing sticky config",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "zero desktop step",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "zero mobile step",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "negative top",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "string bottom gap",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "runway below minimum",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "runway above maximum",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "NaN mobile top",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "missing section",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "duplicate IDs",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "external asset",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "minimum supported values",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "maximum supported values",
+      "expected": true,
+      "actual": true
+    }
+  ],
+  "passed": true
+}
