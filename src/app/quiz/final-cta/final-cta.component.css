@@ -1,4 +1,4 @@
-.final-cta { min-height: 640px; overflow: hidden; background: var(--soft) url('/assets/figma/final-cta-bg-cta-1-2068.svg') center / 1440px 640px no-repeat; }
+.final-cta { min-height: 640px; overflow: hidden; background: var(--soft) url('/quiz/assets/figma/final-cta-bg-cta-1-2068.svg') center / 1440px 640px no-repeat; }
 .final-inner { position: relative; min-height: 640px; }
 .final-copy { position: absolute; z-index: 1; top: 120px; left: 0; max-width: 510px; }
 .final-copy h2 { font-size: var(--section-title-size); line-height: var(--section-title-leading); text-transform: uppercase; }

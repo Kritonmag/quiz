@@ -113,3 +113,8 @@ Typecheck/build/diff-check прошли, initial 192.50 kB / estimated transfer 
 14.10.2026: раньше Header отменял переход для всех ссылок меню, хотя их `href` уже указывали `#about`, `#prizes`, `#rating` и `#mechanics`. Из-за этого визуально рабочие пункты не прокручивали страницу.
 
 Исправление: ссылки стали нативными; добавлена плавная прокрутка CSS и ее отключение при `prefers-reduced-motion`. SPEC и техническая документация уточнены: Footer ссылки остаются демонстрационными, CTA не изменены. После изменений `npm run typecheck` и `npm run build` прошли (202.18 kB raw / 54.26 kB estimated transfer). Браузерное поведение не проверялось по прежнему ограничению пользователя. P-05 ожидает единую ручную приемку.
+## Публикация GitHub Pages — PROMPT-025
+
+15.10.2026: единственный `.github/workflows/jekyll-gh-pages.yml` заменен workflow `.github/workflows/angular-gh-pages.yml`: Node 22, `npm ci`, `npm run build -- --base-href /quiz/`, `upload-pages-artifact@v3` с каталогом `dist/quiz-demo/browser/` и `deploy-pages@v5`. Конкурирующего Pages workflow нет.
+
+Первый production build показал, что Angular не разрешает CSS URL вида `assets/...` из public-папки. Фоновые CSS URL заданы как `/quiz/assets/...`, чтобы соответствовать подпути проектного сайта. Повторная точная команда `npm run build -- --base-href /quiz/` прошла: index.html лежит в корне артефакта и содержит `<base href="/quiz/">`; mocks/quiz.json скопирован; проверены 27 путей изображений из JSON и все 8 URL CSS-фонов — файлы присутствуют. Workflow содержит Pages upload/deploy actions и не запускает Jekyll. `git diff --check` прошел. Удаленный запуск Pages и опубликованный сайт можно проверить после push; workflow локально не исполнялся.

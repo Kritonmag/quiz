@@ -1,4 +1,4 @@
-.leaderboard { padding: 64px 0 var(--space-20); text-align: center; background: var(--soft) url('/assets/figma/leaderboard-bg-confetti-1-1941.svg') center / 1440px 1640px no-repeat; }
+.leaderboard { padding: 64px 0 var(--space-20); text-align: center; background: var(--soft) url('/quiz/assets/figma/leaderboard-bg-confetti-1-1941.svg') center / 1440px 1640px no-repeat; }
 .leaderboard h2 { margin-top: var(--space-4); font-size: var(--section-title-size); line-height: var(--section-title-leading); text-transform: uppercase; }
 .leaderboard h2 span { color: var(--red); }
 .podium { display: grid; grid-template-columns: repeat(3, 1fr); align-items: end; max-width: 1200px; margin: 90px auto 0; text-align: left; }
@@ -22,7 +22,7 @@
 .player-score { margin-left: auto; font-size: 14px; font-weight: 700; white-space: nowrap; }
 
 @media (max-width: 768px) {
-  .leaderboard { padding: 64px 0; background-image: url('/assets/figma/leaderboard-bg-confetti-1-638.svg'); background-size: 679px 905px; }
+  .leaderboard { padding: 64px 0; background-image: url('/quiz/assets/figma/leaderboard-bg-confetti-1-638.svg'); background-size: 679px 905px; }
   .leaderboard h2 { font-size: var(--section-title-mobile-size); line-height: var(--section-title-mobile-leading); }
   .podium { margin-top: 96px; grid-template-columns: 115px minmax(0,1fr) 115px; align-items: end; }
   .podium-card { min-height: 152px; padding: 20px 10px 12px; overflow: visible; }

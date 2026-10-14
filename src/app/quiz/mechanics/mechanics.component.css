@@ -1,5 +1,5 @@
 .mechanics { position: relative; overflow: hidden; padding: var(--space-20) 0 120px; text-align: center; background: var(--paper); }
-.mechanics::after { content: ''; position: absolute; bottom: 0; right: 0; width: 432px; height: 40px; background: url('/assets/figma/prizes-vector4560-1-1937.svg') no-repeat; }
+.mechanics::after { content: ''; position: absolute; bottom: 0; right: 0; width: 432px; height: 40px; background: url('/quiz/assets/figma/prizes-vector4560-1-1937.svg') no-repeat; }
 .mechanics h2 { margin-top: var(--space-4); font-size: var(--section-title-size); line-height: var(--section-title-leading); text-transform: uppercase; }
 .mechanics h2 span { color: var(--red); }
 .mechanics-diagram { position: relative; max-width: 800px; margin: 99px auto 0; }
@@ -22,7 +22,7 @@
 
 @media (max-width: 768px) {
   .mechanics { padding: 56px 0 64px; }
-  .mechanics::after { width: 157px; height: 32px; background-image: url('/assets/figma/prizes-vector4559-1-636.svg'); }
+  .mechanics::after { width: 157px; height: 32px; background-image: url('/quiz/assets/figma/prizes-vector4559-1-636.svg'); }
   .mechanics h2 { font-size: var(--section-title-mobile-size); line-height: var(--section-title-mobile-leading); }
   .mechanics-diagram { margin-top: 32px; }
   .mechanics-list { padding-left: 52px; }

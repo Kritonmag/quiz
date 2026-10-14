@@ -1,4 +1,4 @@
-.hero { min-height: 686px; color: var(--paper); background: var(--hero-red) url('/assets/figma/hero-bg-hero-1-1590.svg') center -64px / 1920px 750px no-repeat; overflow: hidden; }
+.hero { min-height: 686px; color: var(--paper); background: var(--hero-red) url('/quiz/assets/figma/hero-bg-hero-1-1590.svg') center -64px / 1920px 750px no-repeat; overflow: hidden; }
 .hero-inner { position: relative; min-height: 686px; }
 .hero-copy { position: absolute; top: 88px; left: 0; width: 760px; }
 .hero-copy .eyebrow { margin-bottom: var(--space-8); font-size: 14px; letter-spacing: .1em; }

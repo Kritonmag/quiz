@@ -1,5 +1,5 @@
 .prizes { position: relative; background: var(--paper); padding: var(--space-20) 0 120px; }
-.prizes::after { content: ''; position: absolute; bottom: 0; right: 0; width: 432px; height: 40px; background: url('/assets/figma/prizes-vector4560-1-1937.svg') no-repeat; }
+.prizes::after { content: ''; position: absolute; bottom: 0; right: 0; width: 432px; height: 40px; background: url('/quiz/assets/figma/prizes-vector4560-1-1937.svg') no-repeat; }
 .prizes-layout { display: grid; grid-template-columns: 372px minmax(0,800px); gap: 108px; align-items: start; }
 .prizes-copy { position: sticky; top: var(--sticky-copy-top, var(--prize-sticky-default-top)); }
 .prizes-copy h2 { margin-top: var(--space-4); font-size: 36px; line-height: 40px; font-weight: 700; text-transform: uppercase; }
@@ -36,7 +36,7 @@
 
 @media (max-width: 768px) {
   .prizes { padding: 56px 0 64px; }
-  .prizes::after { width: 157px; height: 32px; background-image: url('/assets/figma/prizes-vector4559-1-636.svg'); }
+  .prizes::after { width: 157px; height: 32px; background-image: url('/quiz/assets/figma/prizes-vector4559-1-636.svg'); }
   .prizes-layout { display: block; }
   .prizes-copy { position: static; top: auto; text-align: center; }
   .prizes-copy h2 { margin-top: 16px; font-size: var(--section-title-mobile-size); line-height: var(--section-title-mobile-leading); }
