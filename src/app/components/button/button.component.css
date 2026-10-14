@@ -1,0 +1,41 @@
+:host { display: inline-block; }
+
+.quiz-button {
+  min-height: 56px;
+  padding: 10px 28px 10px 22px;
+  border: 0;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 14px), calc(100% - 14px) 100%, 0 100%);
+  color: var(--paper);
+  background: var(--red);
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: background-color var(--demo-state-duration), color var(--demo-state-duration), transform var(--demo-state-duration);
+}
+
+:host(.button-host--white) .quiz-button { color: var(--hero-red); background: var(--paper); }
+:host:has(.quiz-button:focus-visible) { outline: 3px solid var(--blue); outline-offset: 3px; }
+:host-context(.hero):has(.quiz-button:focus-visible) { outline-color: var(--paper); }
+.quiz-button:focus-visible { outline: none; }
+:host(.header-cta) .quiz-button { min-height: 48px; padding: 7px 28px 7px 20px; font-size: 18px; }
+:host-context(.hero-action), :host-context(.hero-action) .quiz-button { width: 100%; }
+
+@media (hover: hover) and (pointer: fine) {
+  .quiz-button:hover { background: var(--hero-red); transform: translateY(var(--demo-hover-offset)); }
+  :host(.button-host--white) .quiz-button:hover { background: var(--soft); }
+}
+
+.quiz-button:active { background: var(--footer); transform: translateY(var(--demo-active-offset)); }
+:host(.button-host--white) .quiz-button:active { color: var(--red); background: var(--medium); }
+
+@media (max-width: 768px) {
+  .quiz-button { min-height: 48px; padding: 8px 28px 8px 20px; font-size: 22px; line-height: 30px; }
+  :host-context(.leaderboard) .quiz-button { width: 100%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .quiz-button { transition-duration: 0ms; }
+  .quiz-button:hover, .quiz-button:active { transform: none; }
+}

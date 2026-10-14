@@ -1,0 +1,26 @@
+<section class="mechanics" id="mechanics" aria-labelledby="mechanics-title">
+  <div class="mechanics-inner container">
+    <p class="eyebrow">{{ data().eyebrow }}</p>
+    <h2 id="mechanics-title">{{ data().titleFirst }} <span>{{ data().titleSecond }}</span></h2>
+    <div class="mechanics-diagram">
+      <div class="mechanics-timeline" aria-hidden="true">
+        <img class="mechanics-line" src="assets/figma/mechanics-line205-1-2061.svg" alt="">
+        <span class="mechanics-diamond"></span>
+        <span class="mechanics-diamond"></span>
+        <span class="mechanics-diamond"></span>
+      </div>
+      <img class="mechanics-mobile-line" src="assets/figma/mechanics-frame2131330124-1-764.svg" alt="" aria-hidden="true">
+      <ol class="mechanics-list">
+        @for (item of data().items; track item.id) {
+          <li>
+            <strong>{{ item.number }}</strong>
+            <div>
+              <h3>{{ item.label }}</h3>
+              <p>{{ item.description }}</p>
+            </div>
+          </li>
+        }
+      </ol>
+    </div>
+  </div>
+</section>

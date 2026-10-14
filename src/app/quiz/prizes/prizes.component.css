@@ -1,0 +1,60 @@
+.prizes { position: relative; background: var(--paper); padding: var(--space-20) 0 120px; }
+.prizes::after { content: ''; position: absolute; bottom: 0; right: 0; width: 432px; height: 40px; background: url('/assets/figma/prizes-vector4560-1-1937.svg') no-repeat; }
+.prizes-layout { display: grid; grid-template-columns: 372px minmax(0,800px); gap: 108px; align-items: start; }
+.prizes-copy { position: sticky; top: var(--sticky-copy-top, var(--prize-sticky-default-top)); }
+.prizes-copy h2 { margin-top: var(--space-4); font-size: 36px; line-height: 40px; font-weight: 700; text-transform: uppercase; }
+.prizes-copy h2 span { color: var(--red); }
+.prizes-intro { margin-top: var(--space-6); color: var(--text); }
+.prizes-rules { list-style: none; margin: var(--space-6) 0 0; padding: 0; display: grid; gap: var(--space-2); color: var(--text); }
+.prizes-rules li { display: grid; grid-template-columns: 24px 1fr; gap: 12px; }
+.prizes-rules img { width: 24px; height: 24px; }
+.prizes-cta { display: block; margin-top: 116px; }
+.prize-cards { display: grid; gap: var(--space-6); padding-bottom: var(--sticky-runway, var(--prize-sticky-runway)); }
+.prize-card { position: sticky; top: var(--sticky-top, var(--prize-sticky-default-top)); align-self: start; min-height: 480px; overflow: hidden; z-index: var(--prize-layer-one); background: var(--soft); color: var(--text-strong); }
+.prize-card:nth-child(2) { z-index: var(--prize-layer-two); background: var(--medium); }
+.prize-card:nth-child(3) { z-index: var(--prize-layer-three); }
+.prize-card--main { color: var(--paper); background: var(--red); }
+.prize-card-copy { position: relative; z-index: 2; display: flex; flex-direction: column; min-height: 480px; padding: var(--space-7); }
+.prize-label { font-size: 12px; line-height: 18px; letter-spacing: .05em; text-transform: uppercase; }
+.mobile-label { display: none; }
+.prize-message { width: 43%; margin-block: auto; }
+.prize-message h3 { font-size: 48px; line-height: 52px; font-weight: 700; text-transform: uppercase; }
+.prize-message h3 span { color: var(--red); }
+.prize-message p { margin-top: 8px; font-size: 16px; line-height: 24px; }
+.prize-card--main .prize-message { width: 54%; }
+.prize-card--main .prize-message h3 span { color: var(--paper); }
+.prize-illustration { position: absolute; right: 0; bottom: 0; z-index: 1; width: 50%; }
+.prize-illustration img { width: 100%; height: auto; }
+.prize-photo { position: absolute; inset: 0; overflow: hidden; }
+.prize-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 56% center; }
+.prize-photo::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, var(--red) 18%, transparent 80%), linear-gradient(#e21a1ac9, #e21a1a88); }
+
+@media (max-width: 1200px) {
+  .prizes-layout { grid-template-columns: minmax(0, 32%) minmax(0, 1fr); gap: 5%; }
+  .prize-message h3 { font-size: clamp(28px, 3vw, 48px); line-height: 1.1; }
+}
+
+@media (max-width: 768px) {
+  .prizes { padding: 56px 0 64px; }
+  .prizes::after { width: 157px; height: 32px; background-image: url('/assets/figma/prizes-vector4559-1-636.svg'); }
+  .prizes-layout { display: block; }
+  .prizes-copy { position: static; top: auto; text-align: center; }
+  .prizes-copy h2 { margin-top: 16px; font-size: var(--section-title-mobile-size); line-height: var(--section-title-mobile-leading); }
+  .prizes-intro { margin-top: 16px; }
+  .prizes-rules { margin-top: 16px; text-align: left; }
+  .prizes-cta { display: none; }
+  .prize-cards { gap: 16px; margin-top: 28px; }
+  .prize-card { min-height: 522px; }
+  .prize-card:nth-child(n+2) { min-height: 498px; }
+  .prize-card-copy { height: auto; min-height: 522px; padding: 24px 20px 225px; }
+  .prize-card:nth-child(n+2) .prize-card-copy { min-height: 498px; }
+  .prize-label { font-size: 14px; }
+  .desktop-label { display: none; }
+  .mobile-label { display: inline; }
+  .prize-message, .prize-card--main .prize-message { position: static; transform: none; width: 100%; margin-top: 32px; margin-bottom: 0; }
+  .prize-message h3 { font-size: 28px; line-height: 32px; }
+  .prize-message p { max-width: 310px; }
+  .prize-illustration { left: 0; right: 0; bottom: 0; width: 100%; }
+  .prize-photo img { object-position: 57% center; }
+  .prize-card--main .prize-card-copy { padding-bottom: 36px; }
+}

@@ -1,0 +1,66 @@
+{
+  "prompt": "PROMPT-021",
+  "components": 9,
+  "externalTemplates": 9,
+  "externalStyles": 9,
+  "inlineTemplates": 0,
+  "inlineStyles": 0,
+  "missingFiles": 0,
+  "normalizedTemplatesEquivalent": 9,
+  "componentSets": [
+    "src/app/app.component",
+    "src/app/components/button/button.component",
+    "src/app/quiz/header/header.component",
+    "src/app/quiz/hero/hero.component",
+    "src/app/quiz/prizes/prizes.component",
+    "src/app/quiz/leaderboard/leaderboard.component",
+    "src/app/quiz/mechanics/mechanics.component",
+    "src/app/quiz/final-cta/final-cta.component",
+    "src/app/quiz/footer/footer.component"
+  ],
+  "quizFolderLayout": {
+    "componentFolders": 7,
+    "filesPerComponentFolder": 3,
+    "flatComponentFiles": 0,
+    "rootInfrastructureFiles": [
+      "quiz-content.ts",
+      "quiz-content.service.ts"
+    ]
+  },
+  "globalCssResponsibility": [
+    "reset",
+    "container",
+    "shared eyebrow and focus defaults",
+    "brand shared by header and footer"
+  ],
+  "cssParity": {
+    "baseline": "8442167:src/styles.css plus P-05 cleanup",
+    "result": "passed",
+    "rulesBefore": 328,
+    "rulesAfter": 328,
+    "expectedSelectorChanges": [
+      "Button host selectors use :host/:has and :host-context under Angular encapsulation",
+      "ribbon-hidden targets the HeroComponent host",
+      "prize-card nth-child properties remain merged by P-05",
+      "mobile leaderboard padding 64px 0 is equivalent to 64px 0 64px"
+    ]
+  },
+  "behaviorRegression": {
+    "heroActualCalls": 100,
+    "bothAnswerButtonsBound": true,
+    "questionTextImageAndAltCoupled": true
+  },
+  "commands": {
+    "typecheck": "passed",
+    "build": "passed",
+    "diffCheck": "passed"
+  },
+  "build": {
+    "initialKB": 202.2,
+    "estimatedTransferKB": 54.29
+  },
+  "limitations": [
+    "No browser or CSS paint verification per PROMPT-013",
+    "Source-level CSS parity and Angular production compilation do not replace visual viewport checks"
+  ]
+}

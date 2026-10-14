@@ -1,0 +1,25 @@
+.final-cta { min-height: 640px; overflow: hidden; background: var(--soft) url('/assets/figma/final-cta-bg-cta-1-2068.svg') center / 1440px 640px no-repeat; }
+.final-inner { position: relative; min-height: 640px; }
+.final-copy { position: absolute; z-index: 1; top: 120px; left: 0; max-width: 510px; }
+.final-copy h2 { font-size: var(--section-title-size); line-height: var(--section-title-leading); text-transform: uppercase; }
+.final-brand { color: var(--paper); background: var(--red); }
+.final-copy p { max-width: 390px; margin: 24px 0; color: var(--text); }
+.final-pattern { display: none; }
+.final-person { position: absolute; bottom: 0; right: -44px; width: 630px; height: 600px; object-fit: cover; object-position: top; }
+
+@media (max-width: 768px) {
+  .final-cta { min-height: 702px; background-image: none; }
+  .final-inner { min-height: 702px; }
+  .final-pattern { display: block; position: absolute; top: 290px; width: 436px; max-width: none; height: 516px; }
+  .final-pattern--one { left: -64px; }
+  .final-pattern--two { left: 264px; width: 391px; }
+  .final-copy { top: 56px; left: 0; max-width: 100%; }
+  .final-copy h2 { font-size: 42px; line-height: 44px; }
+  .final-copy p { margin-top: 12px; max-width: 330px; font-size: 18px; }
+  .final-copy app-button { display: none; }
+  .final-person { width: 390px; height: 436px; right: -60px; object-fit: cover; object-position: top; }
+}
+
+@media (max-width: 374px) {
+  .final-copy h2 { font-size: 36px; line-height: 40px; }
+}

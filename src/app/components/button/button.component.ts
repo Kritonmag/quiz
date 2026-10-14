@@ -4,7 +4,8 @@ import { Component, input } from '@angular/core';
   selector: 'app-button',
   standalone: true,
   host: { '[class]': '"button-host button-host--" + variant()' },
-  template: `<button class="quiz-button" type="button">{{ label() }}</button>`
+  templateUrl: './button.component.html',
+  styleUrl: './button.component.css'
 })
 export class ButtonComponent {
   readonly label = input.required<string>();

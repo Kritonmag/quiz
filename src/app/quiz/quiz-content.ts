@@ -40,7 +40,8 @@ function items(value: unknown, fields: string[]): value is Record<string, string
 }
 
 function localAsset(value: string): boolean {
-  return (value.startsWith('assets/figma/') || value.startsWith('assets/hero-user/')) && !value.includes('..');
+  return (value.startsWith('assets/figma/') || value.startsWith('assets/hero-user/')) &&
+    !value.includes('..') && /\.(png|jpe?g|webp|svg)$/i.test(value);
 }
 
 function numberInRange(value: unknown, min: number, max: number): value is number {
@@ -59,7 +60,6 @@ export function isQuizContent(value: unknown): value is QuizContent {
         ['id', 'text', 'yes', 'no'].every(field => question[field].trim().length > 0) &&
         ((question['image'] === null && question['imageAlt'] === null) ||
           (typeof question['image'] === 'string' && localAsset(question['image']) &&
-            /\.(png|jpe?g|webp|svg)$/i.test(question['image']) &&
             typeof question['imageAlt'] === 'string' && question['imageAlt'].trim().length > 0))) ||
       !numberInRange(hero['ribbonSpeedPxPerSecond'], 10, 300)) return false;
 

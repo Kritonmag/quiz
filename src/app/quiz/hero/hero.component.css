@@ -1,0 +1,84 @@
+.hero { min-height: 686px; color: var(--paper); background: var(--hero-red) url('/assets/figma/hero-bg-hero-1-1590.svg') center -64px / 1920px 750px no-repeat; overflow: hidden; }
+.hero-inner { position: relative; min-height: 686px; }
+.hero-copy { position: absolute; top: 88px; left: 0; width: 760px; }
+.hero-copy .eyebrow { margin-bottom: var(--space-8); font-size: 14px; letter-spacing: .1em; }
+.hero-title-backdrop { position: absolute; z-index: 0; top: 129px; left: -170px; width: 696px; height: 104px; transform: rotate(-3deg); }
+.hero-title-backdrop img { width: 696px; height: 104px; max-width: none; }
+.hero h1 { position: relative; z-index: 1; width: max-content; font-size: 104px; line-height: 1; letter-spacing: -.03em; font-weight: 900; text-transform: uppercase; }
+.hero h1 span { display: block; }
+.hero-title-second { color: var(--hero-red); }
+.hero-subtitle { position: relative; z-index: 1; max-width: 564px; margin-top: var(--space-6); font-size: 20px; line-height: 26px; }
+.question-stack { position: absolute; top: 136px; right: 0; width: 462px; padding-top: 40px; }
+.question-stack::before, .question-stack::after { content: ''; position: absolute; left: 50%; transform: translateX(-50%); background: #ffffffad; backdrop-filter: blur(12px); }
+.question-stack::before { width: 350px; height: 40px; top: 0; }
+.question-stack::after { width: 406px; height: 20px; top: 20px; }
+.question-card { height: 264px; position: relative; overflow: hidden; background: var(--paper); color: var(--text); }
+.question-text { position: absolute; z-index: 2; left: 24px; top: 24px; width: 236px; font-size: 18px; line-height: 24px; }
+.question-card--without-photo .question-text { width: calc(100% - 48px); }
+.question-stripes { position: absolute; width: 180px; height: 318px; top: -21px; right: -52px; max-width: none; }
+.signalist-clip { position: absolute; top: 12px; right: 0; width: 202px; height: 252px; overflow: hidden; }
+.signalist-clip img { position: absolute; width: 272px; max-width: none; height: auto; left: -18px; top: -17px; }
+.question-portrait { position: absolute; right: 0; bottom: 0; width: auto; height: calc(100% - 10px); max-width: none; }
+.question-answers { position: absolute; z-index: 3; bottom: 24px; left: 24px; display: flex; gap: 8px; }
+.answer { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-width: 108px; height: 48px; border: 1px solid var(--border); background: var(--paper); color: var(--text); clip-path: polygon(0 0,100% 0,100% calc(100% - 14px),calc(100% - 14px) 100%,0 100%); font-weight: 700; transition: background-color var(--demo-state-duration), transform var(--demo-state-duration); }
+.answer:focus-visible { clip-path: none; outline-color: var(--blue); }
+.answer img { width: 17px; height: 14px; object-fit: contain; }
+.hero-action { position: absolute; top: 456px; left: 0; width: 284px; }
+.hero-action app-button { width: 100%; }
+.hero-ribbon { position: relative; height: 36px; overflow: hidden; padding: 0 12px; color: var(--paper); background: #393939; font-size: 12px; font-weight: 700; letter-spacing: .03em; white-space: nowrap; }
+.ribbon-readable { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; }
+.hero-ribbon-track { position: absolute; top: 0; left: 0; display: flex; align-items: center; width: max-content; height: 36px; animation: ribbon-scroll var(--ribbon-duration) linear infinite; }
+.hero-ribbon-group { display: inline-flex; flex: none; align-items: center; white-space: nowrap; }
+.hero-ribbon-phrase { flex: none; padding-right: var(--ribbon-copy-gap); }
+@keyframes ribbon-scroll { to { transform: translateX(-50%); } }
+:host(.ribbon-hidden) .hero-ribbon-track, .hero-action:hover .hero-ribbon-track, .hero-action:focus-within .hero-ribbon-track { animation-play-state: paused; }
+
+@media (hover: hover) and (pointer: fine) {
+  .answer:hover { background: var(--soft); transform: translateY(var(--demo-hover-offset)); }
+}
+
+.answer:active { background: var(--medium); transform: translateY(var(--demo-active-offset)); }
+
+@media (max-width: 1200px) {
+  .hero-copy { width: 60%; }
+  .hero h1 { font-size: clamp(60px, 7.3vw, 104px); }
+  .question-stack { width: min(39vw,462px); }
+}
+
+@media (max-width: 768px) {
+  .hero { min-height: 751px; background-size: auto 807px; background-position: center -56px; }
+  .hero-inner { min-height: 751px; }
+  .hero-copy { top: 38px; left: 0; width: 100%; text-align: center; }
+  .hero-copy .eyebrow { margin-bottom: 28px; font-size: 12px; }
+  .hero-title-backdrop { top: 87px; left: -112px; width: 423px; height: 54px; transform: rotate(-2deg); }
+  .hero-title-backdrop img { width: 423px; height: 54px; }
+  .hero h1 { width: 100%; font-size: clamp(42px, 13.3vw, 50px); line-height: 1; letter-spacing: -.03em; }
+  .hero-subtitle { max-width: 345px; margin: 12px auto 0; font-size: 18px; line-height: 24px; }
+  .question-stack { top: 274px; left: 50%; right: auto; transform: translateX(-50%); width: min(335px, 100% - 6px); padding-top: 27px; }
+  .question-stack::before { width: 87%; height: 27px; }
+  .question-stack::after { width: 93%; height: 13px; top: 14px; }
+  .question-card { height: 246px; }
+  .question-text { left: 16px; top: 16px; width: 200px; font-size: 16px; line-height: 24px; }
+  .question-card--without-photo .question-text { width: calc(100% - 32px); }
+  .question-stripes { right: -74px; top: -25px; }
+  .signalist-clip { right: 0; top: 0; width: 157px; height: 246px; }
+  .signalist-clip img { width: 224px; left: -15px; top: -12px; }
+  .question-card--q2:not(.question-card--without-photo) .question-text, .question-card--q3:not(.question-card--without-photo) .question-text { width: 160px; }
+  .question-card--q3:not(.question-card--without-photo) .question-text { font-size: 14px; line-height: 20px; }
+  .question-answers { left: 16px; bottom: 16px; display: grid; gap: 8px; }
+  .answer { width: 140px; height: 32px; }
+  .hero-action { top: 579px; left: 0; width: 100%; }
+  .hero-ribbon { width: 100%; }
+}
+
+@media (max-width: 374px) {
+  .hero h1 { font-size: 42px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-ribbon { height: auto; min-height: 36px; padding-block: 8px; overflow: visible; white-space: normal; }
+  .hero-ribbon-track { display: none; animation: none; }
+  .ribbon-readable { position: static; width: auto; height: auto; margin: 0; overflow: visible; clip: auto; white-space: normal; }
+  .answer { transition-duration: 0ms; }
+  .answer:hover, .answer:active { transform: none; }
+}

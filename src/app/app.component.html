@@ -1,0 +1,20 @@
+@if (content(); as page) {
+  <app-header [data]="page.header" />
+  <main>
+    <app-hero [data]="page.hero" />
+    <app-prizes [data]="page.prizes" />
+    <app-leaderboard [data]="page.leaderboard" />
+    <app-mechanics [data]="page.mechanics" />
+    <app-final-cta [data]="page.finalCta" />
+  </main>
+  <app-footer [data]="page.footer" />
+} @else if (error()) {
+  <main class="page-status" role="alert">
+    <h1>Не удалось загрузить страницу</h1>
+    <p>Проверьте соединение и попробуйте обновить страницу.</p>
+  </main>
+} @else {
+  <main class="page-status" role="status">
+    <p>Загрузка страницы…</p>
+  </main>
+}

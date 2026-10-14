@@ -1,0 +1,542 @@
+{
+  "guardCases": [
+    {
+      "name": "current JSON",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "hero.questions.1.image rejects assets/figma/",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "hero.questions.1.image rejects assets/figma/file.txt",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "hero.questions.1.image rejects assets/figma/file.png.exe",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "hero.questions.1.image rejects https://example.com/file.png",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "hero.questions.1.image rejects assets/other/file.png",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "hero.questions.1.image rejects assets/figma/../file.png",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "hero.questions.1.image format png",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "hero.questions.1.image format jpeg",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "hero.questions.1.image format jpg",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "hero.questions.1.image format webp",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "hero.questions.1.image format svg",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "hero.questions.1.image format PNG",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "prizes.cards.0.illustration rejects assets/figma/",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "prizes.cards.0.illustration rejects assets/figma/file.txt",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "prizes.cards.0.illustration rejects assets/figma/file.png.exe",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "prizes.cards.0.illustration rejects https://example.com/file.png",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "prizes.cards.0.illustration rejects assets/other/file.png",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "prizes.cards.0.illustration rejects assets/figma/../file.png",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "prizes.cards.0.illustration format png",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "prizes.cards.0.illustration format jpeg",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "prizes.cards.0.illustration format jpg",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "prizes.cards.0.illustration format webp",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "prizes.cards.0.illustration format svg",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "prizes.cards.0.illustration format PNG",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "prizes.cards.0.illustrationDesktop rejects assets/figma/",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "prizes.cards.0.illustrationDesktop rejects assets/figma/file.txt",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "prizes.cards.0.illustrationDesktop rejects assets/figma/file.png.exe",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "prizes.cards.0.illustrationDesktop rejects https://example.com/file.png",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "prizes.cards.0.illustrationDesktop rejects assets/other/file.png",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "prizes.cards.0.illustrationDesktop rejects assets/figma/../file.png",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "prizes.cards.0.illustrationDesktop format png",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "prizes.cards.0.illustrationDesktop format jpeg",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "prizes.cards.0.illustrationDesktop format jpg",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "prizes.cards.0.illustrationDesktop format webp",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "prizes.cards.0.illustrationDesktop format svg",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "prizes.cards.0.illustrationDesktop format PNG",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "leaderboard.top.0.avatar rejects assets/figma/",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "leaderboard.top.0.avatar rejects assets/figma/file.txt",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "leaderboard.top.0.avatar rejects assets/figma/file.png.exe",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "leaderboard.top.0.avatar rejects https://example.com/file.png",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "leaderboard.top.0.avatar rejects assets/other/file.png",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "leaderboard.top.0.avatar rejects assets/figma/../file.png",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "leaderboard.top.0.avatar format png",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "leaderboard.top.0.avatar format jpeg",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "leaderboard.top.0.avatar format jpg",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "leaderboard.top.0.avatar format webp",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "leaderboard.top.0.avatar format svg",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "leaderboard.top.0.avatar format PNG",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "leaderboard.other.0.avatar rejects assets/figma/",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "leaderboard.other.0.avatar rejects assets/figma/file.txt",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "leaderboard.other.0.avatar rejects assets/figma/file.png.exe",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "leaderboard.other.0.avatar rejects https://example.com/file.png",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "leaderboard.other.0.avatar rejects assets/other/file.png",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "leaderboard.other.0.avatar rejects assets/figma/../file.png",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "leaderboard.other.0.avatar format png",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "leaderboard.other.0.avatar format jpeg",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "leaderboard.other.0.avatar format jpg",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "leaderboard.other.0.avatar format webp",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "leaderboard.other.0.avatar format svg",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "leaderboard.other.0.avatar format PNG",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "leaderboard.top.0.decorDesktop rejects assets/figma/",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "leaderboard.top.0.decorDesktop rejects assets/figma/file.txt",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "leaderboard.top.0.decorDesktop rejects assets/figma/file.png.exe",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "leaderboard.top.0.decorDesktop rejects https://example.com/file.png",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "leaderboard.top.0.decorDesktop rejects assets/other/file.png",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "leaderboard.top.0.decorDesktop rejects assets/figma/../file.png",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "leaderboard.top.0.decorDesktop format png",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "leaderboard.top.0.decorDesktop format jpeg",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "leaderboard.top.0.decorDesktop format jpg",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "leaderboard.top.0.decorDesktop format webp",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "leaderboard.top.0.decorDesktop format svg",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "leaderboard.top.0.decorDesktop format PNG",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "leaderboard.top.0.decorMobile rejects assets/figma/",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "leaderboard.top.0.decorMobile rejects assets/figma/file.txt",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "leaderboard.top.0.decorMobile rejects assets/figma/file.png.exe",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "leaderboard.top.0.decorMobile rejects https://example.com/file.png",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "leaderboard.top.0.decorMobile rejects assets/other/file.png",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "leaderboard.top.0.decorMobile rejects assets/figma/../file.png",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "leaderboard.top.0.decorMobile format png",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "leaderboard.top.0.decorMobile format jpeg",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "leaderboard.top.0.decorMobile format jpg",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "leaderboard.top.0.decorMobile format webp",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "leaderboard.top.0.decorMobile format svg",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "leaderboard.top.0.decorMobile format PNG",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "footer.socials.0.icon rejects assets/figma/",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "footer.socials.0.icon rejects assets/figma/file.txt",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "footer.socials.0.icon rejects assets/figma/file.png.exe",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "footer.socials.0.icon rejects https://example.com/file.png",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "footer.socials.0.icon rejects assets/other/file.png",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "footer.socials.0.icon rejects assets/figma/../file.png",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "footer.socials.0.icon format png",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "footer.socials.0.icon format jpeg",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "footer.socials.0.icon format jpg",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "footer.socials.0.icon format webp",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "footer.socials.0.icon format svg",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "footer.socials.0.icon format PNG",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "hero without photo pair",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "hero mixed null",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "hero whitespace question",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "hero whitespace alt",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "hero duplicate id",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "hero count mismatch",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "ribbon invalid speed",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "sticky invalid step",
+      "expected": false,
+      "actual": false
+    }
+  ],
+  "additionalInvalidInputs": [
+    "null",
+    "array"
+  ],
+  "hero": {
+    "actualComponentCalls": 100,
+    "coupledQuestionTextPhotoAlt": true,
+    "bothButtonsHaveHandler": true
+  },
+  "limitations": [
+    "Synthetic method calls; no DOM, CSS rendering or browser event dispatch",
+    "Valid extension alone does not prove asset existence; actual JSON assets checked separately"
+  ]
+}

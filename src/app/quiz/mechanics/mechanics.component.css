@@ -1,0 +1,36 @@
+.mechanics { position: relative; overflow: hidden; padding: var(--space-20) 0 120px; text-align: center; background: var(--paper); }
+.mechanics::after { content: ''; position: absolute; bottom: 0; right: 0; width: 432px; height: 40px; background: url('/assets/figma/prizes-vector4560-1-1937.svg') no-repeat; }
+.mechanics h2 { margin-top: var(--space-4); font-size: var(--section-title-size); line-height: var(--section-title-leading); text-transform: uppercase; }
+.mechanics h2 span { color: var(--red); }
+.mechanics-diagram { position: relative; max-width: 800px; margin: 99px auto 0; }
+.mechanics-list { list-style: none; margin: 0; padding: 0; text-align: left; }
+.mechanics-list li { display: grid; grid-template-columns: 1fr 1fr; gap: 44px; align-items: start; min-height: 340px; }
+.mechanics-list li:last-child { min-height: 240px; }
+.mechanics-list strong { text-align: right; color: var(--coral); font-size: 240px; line-height: 1; letter-spacing: -.04em; }
+.mechanics-list li:nth-child(2) strong, .mechanics-list li:nth-child(2) h3 { color: var(--coral-dark); }
+.mechanics-list li:nth-child(3) strong, .mechanics-list li:nth-child(3) h3 { color: var(--red); }
+.mechanics-list li > div { margin-top: 96px; padding-left: 44px; }
+.mechanics-list h3 { color: var(--coral); font-size: 48px; line-height: 52px; text-transform: uppercase; }
+.mechanics-list p { max-width: 270px; color: var(--text); }
+.mechanics-timeline { position: absolute; top: 120px; left: calc(50% + 2px); z-index: 0; width: 4px; height: 680px; }
+.mechanics-line { position: absolute; top: 0; left: 4px; width: 680px; height: 4px; max-width: none; transform: rotate(90deg); transform-origin: 0 0; }
+.mechanics-diamond { position: absolute; left: -10px; width: 24px; height: 24px; transform: rotate(45deg); border: 4px solid #b1b1b1; background: var(--paper); }
+.mechanics-diamond:nth-child(2) { top: -12px; border-color: var(--red); background: var(--red); }
+.mechanics-diamond:nth-child(3) { top: 328px; }
+.mechanics-diamond:nth-child(4) { top: 668px; }
+.mechanics-mobile-line { display: none; }
+
+@media (max-width: 768px) {
+  .mechanics { padding: 56px 0 64px; }
+  .mechanics::after { width: 157px; height: 32px; background-image: url('/assets/figma/prizes-vector4559-1-636.svg'); }
+  .mechanics h2 { font-size: var(--section-title-mobile-size); line-height: var(--section-title-mobile-leading); }
+  .mechanics-diagram { margin-top: 32px; }
+  .mechanics-list { padding-left: 52px; }
+  .mechanics-list li { display: block; position: relative; min-height: 174px; }
+  .mechanics-list li:last-child { min-height: 174px; }
+  .mechanics-list strong { display: block; text-align: left; font-size: 80px; line-height: 80px; }
+  .mechanics-list li > div { margin-top: 0; padding: 0; }
+  .mechanics-list h3 { font-size: 20px; line-height: 24px; }
+  .mechanics-timeline { display: none; }
+  .mechanics-mobile-line { display: block; position: absolute; top: 30px; left: 8px; width: 36px; height: 423px; }
+}

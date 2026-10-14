@@ -1,0 +1,52 @@
+.leaderboard { padding: 64px 0 var(--space-20); text-align: center; background: var(--soft) url('/assets/figma/leaderboard-bg-confetti-1-1941.svg') center / 1440px 1640px no-repeat; }
+.leaderboard h2 { margin-top: var(--space-4); font-size: var(--section-title-size); line-height: var(--section-title-leading); text-transform: uppercase; }
+.leaderboard h2 span { color: var(--red); }
+.podium { display: grid; grid-template-columns: repeat(3, 1fr); align-items: end; max-width: 1200px; margin: 90px auto 0; text-align: left; }
+.podium-card { position: relative; min-height: 220px; padding: 28px 24px 24px; display: flex; flex-direction: column; overflow: hidden; color: var(--red); background: var(--podium-light); text-transform: uppercase; }
+.podium-card--second { min-height: 260px; background: var(--podium-pink); order: -1; }
+.podium-card--first { min-height: 300px; color: var(--paper); background: var(--red); }
+.podium-decor { position: absolute; right: -30px; bottom: -10px; width: 156px; height: 248px; }
+.podium-decor img { width: 156px; height: 248px; max-width: none; }
+.podium-card:not(.podium-card--first) .podium-decor, .podium-card:not(.podium-card--first) .podium-decor img { width: 147px; height: 223px; }
+.podium-card:not(.podium-card--first) .podium-decor { right: -25px; }
+.podium-avatar { position: absolute; z-index: 1; left: 24px; bottom: 92px; width: 64px; height: 64px; border-radius: var(--radius-round); object-fit: cover; }
+.podium-place { position: relative; z-index: 1; font-size: 14px; letter-spacing: .05em; }
+.podium-card h3 { position: relative; z-index: 1; margin-top: auto; font-size: 24px; line-height: 32px; }
+.podium-score { position: relative; z-index: 1; margin-top: 4px; font-size: 14px; font-weight: 700; }
+.leaderboard-list { list-style: none; margin: 48px auto 64px; padding: 0; max-width: 1200px; text-align: left; }
+.leaderboard-list li { min-height: 72px; display: flex; align-items: center; gap: 18px; padding: 8px 24px; background: #ffffffb0; }
+.leaderboard-list li:nth-child(odd) { background: transparent; }
+.rank { min-width: 24px; font-size: 32px; font-weight: 700; color: var(--text); }
+.leaderboard-list img { width: 48px; height: 48px; object-fit: cover; border-radius: var(--radius-round); }
+.player-name { font-size: 20px; line-height: 24px; font-weight: 700; text-transform: uppercase; }
+.player-score { margin-left: auto; font-size: 14px; font-weight: 700; white-space: nowrap; }
+
+@media (max-width: 768px) {
+  .leaderboard { padding: 64px 0; background-image: url('/assets/figma/leaderboard-bg-confetti-1-638.svg'); background-size: 679px 905px; }
+  .leaderboard h2 { font-size: var(--section-title-mobile-size); line-height: var(--section-title-mobile-leading); }
+  .podium { margin-top: 96px; grid-template-columns: 115px minmax(0,1fr) 115px; align-items: end; }
+  .podium-card { min-height: 152px; padding: 20px 10px 12px; overflow: visible; }
+  .podium-card--second { min-height: 158px; }
+  .podium-card--first { min-height: 181px; padding: 26px 12px 12px; }
+  .podium-decor, .podium-card:not(.podium-card--first) .podium-decor { right: -19px; bottom: -11px; width: 70px; height: 112px; }
+  .podium-decor img, .podium-card:not(.podium-card--first) .podium-decor img { width: 70px; height: 112px; }
+  .podium-card:not(.podium-card--first) .podium-decor, .podium-card:not(.podium-card--first) .podium-decor img { width: 68px; height: 105px; }
+  .podium-decor { clip-path: inset(0 19px 11px 0); }
+  .podium-avatar { top: -28px; bottom: auto; left: 50%; transform: translateX(-50%); width: 56px; height: 56px; }
+  .podium-place { font-size: 12px; line-height: 14px; }
+  .podium-card h3 { margin-top: 8px; font-size: 14px; line-height: 18px; overflow-wrap: anywhere; }
+  .podium-card--first h3 { font-size: 16px; line-height: 20px; }
+  .podium-score { font-size: 12px; line-height: 16px; }
+  .leaderboard-list { margin: 16px auto 32px; }
+  .leaderboard-list li { min-height: 48px; gap: 8px; padding: 6px 8px; }
+  .rank { min-width: 17px; font-size: 20px; }
+  .leaderboard-list img { width: 32px; height: 32px; }
+  .player-name { font-size: 12px; line-height: 14px; }
+  .player-score { font-size: 10px; }
+}
+
+@media (max-width: 374px) {
+  .podium { grid-template-columns: 30% 40% 30%; }
+  .podium-card { padding-inline: 7px; }
+  .player-score { font-size: 9px; }
+}

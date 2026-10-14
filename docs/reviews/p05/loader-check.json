@@ -1,0 +1,28 @@
+{
+  "actualLoader": {
+    "validJson": true,
+    "invalidImageRejected": true,
+    "httpErrorPropagated": true,
+    "relativeUrls": [
+      "mocks/quiz.json",
+      "mocks/quiz.json",
+      "mocks/quiz.json"
+    ]
+  },
+  "actualRootComponent": {
+    "initialLoading": true,
+    "transitions": [
+      {
+        "mode": "success",
+        "passed": true
+      },
+      {
+        "mode": "error",
+        "passed": true
+      }
+    ]
+  },
+  "limitations": [
+    "Observable and component signal checks only; loading/error DOM and screen-reader behavior not verified"
+  ]
+}
