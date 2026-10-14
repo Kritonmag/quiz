@@ -1,0 +1,18 @@
+{
+  "assetCount": 350,
+  "formats": {
+    "svg": 339,
+    "png": 11
+  },
+  "usageCount": 398,
+  "contextCount": 3,
+  "jsonFilesChecked": 21,
+  "declaredResourcesChecked": 371,
+  "fontStylePairsChecked": 6,
+  "exactTypographySamplesChecked": 8,
+  "referencePngFilesChecked": 7,
+  "errors": [],
+  "bindingGaps": [],
+  "scope": "P-02 only; no package.json/src/public-mocks",
+  "appTestsRun": false
+}

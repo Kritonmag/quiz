@@ -1,0 +1,70 @@
+{
+  "checkedAt": "2026-10-14",
+  "result": "passed",
+  "errors": [],
+  "jsonFilesParsedBeforeThisReport": 19,
+  "assets": 350,
+  "formats": {
+    "svg": 339,
+    "png": 11
+  },
+  "downloadErrors": 0,
+  "unmappedReferences": 0,
+  "sha256Unique": true,
+  "manifestMatchesExactAssetFileSet": true,
+  "sourceContextNodeIdsAndConstantsChecked": true,
+  "pngChecks": "signature, complete chunks, CRC, nonempty IDAT, zlib decode and scanline size where supported",
+  "svgChecks": "XML parse, svg root, root dimensions, viewBox",
+  "references": [
+    {
+      "path": "docs/figma/p02/screenshots/button-desktop-white-default-instance-1-1602.png",
+      "width": 284,
+      "height": 56
+    },
+    {
+      "path": "docs/figma/p02/screenshots/button-mobile-white-default-instance-1-303.png",
+      "width": 343,
+      "height": 48
+    },
+    {
+      "path": "docs/figma/p02/screenshots/desktop-1-1588.png",
+      "width": 1440,
+      "height": 6421
+    },
+    {
+      "path": "docs/figma/p02/screenshots/hero-desktop-question-1-instance-1-1608.png",
+      "width": 462,
+      "height": 264
+    },
+    {
+      "path": "docs/figma/p02/screenshots/hero-mobile-question-1-instance-1-296.png",
+      "width": 335,
+      "height": 246
+    },
+    {
+      "path": "docs/figma/p02/screenshots/mobile-1-271.png",
+      "width": 375,
+      "height": 6044
+    },
+    {
+      "path": "docs/figma/p02/screenshots/prizes-initial-desktop-1-1611.png",
+      "width": 1440,
+      "height": 1688
+    }
+  ],
+  "localReportLinksChecked": 23,
+  "applicationChecks": "Not applicable: no application generated or changed",
+  "visualInspection": [
+    "desktop/mobile screen PNGs",
+    "desktop/mobile Question 1 crops",
+    "desktop/mobile White Default button crops",
+    "signalist source PNG",
+    "train source PNG",
+    "electromechanic source PNG"
+  ],
+  "limitations": [
+    "No independent visual render of every SVG",
+    "Missing mandatory Figma contexts/renders/prototype inspection listed in REPORT Q-01 to Q-09",
+    "Validation pass means internal integrity of available files, not complete P-02 acceptance"
+  ]
+}

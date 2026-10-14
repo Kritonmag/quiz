@@ -1,0 +1,13 @@
+{
+  "checkedAt": "2026-10-14",
+  "tool": "Figma MCP whoami",
+  "plans": [
+    {
+      "tier": "starter",
+      "seat": "Full",
+      "role": "admin"
+    }
+  ],
+  "limitation": "Figma MCP tool call limit on Starter plan; independent second query of Homepage width denied.",
+  "emailSaved": false
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "file": "docs/figma/p02/screenshots/hero-desktop-question-1-instance-1-1608.png",
+    "sourceScreenshot": "docs/figma/p02/screenshots/desktop-1-1588.png",
+    "nodeId": "1:1608",
+    "crop": {
+      "x": 898,
+      "y": 240,
+      "width": 462,
+      "height": 264
+    },
+    "kind": "Lossless spatial crop of original Figma PNG, no generated design."
+  },
+  {
+    "file": "docs/figma/p02/screenshots/hero-mobile-question-1-instance-1-296.png",
+    "sourceScreenshot": "docs/figma/p02/screenshots/mobile-1-271.png",
+    "nodeId": "1:296",
+    "crop": {
+      "x": 19,
+      "y": 357,
+      "width": 335,
+      "height": 246
+    },
+    "kind": "Lossless spatial crop of original Figma PNG, no generated design."
+  },
+  {
+    "file": "docs/figma/p02/screenshots/button-desktop-white-default-instance-1-1602.png",
+    "sourceScreenshot": "docs/figma/p02/screenshots/desktop-1-1588.png",
+    "nodeId": "1:1602",
+    "crop": {
+      "x": 80,
+      "y": 556,
+      "width": 284,
+      "height": 56
+    },
+    "kind": "Lossless spatial crop of original Figma PNG, no generated design."
+  },
+  {
+    "file": "docs/figma/p02/screenshots/button-mobile-white-default-instance-1-303.png",
+    "sourceScreenshot": "docs/figma/p02/screenshots/mobile-1-271.png",
+    "nodeId": "1:303",
+    "crop": {
+      "x": 16,
+      "y": 671,
+      "width": 343,
+      "height": 48
+    },
+    "kind": "Lossless spatial crop of original Figma PNG, no generated design."
+  },
+  {
+    "file": "docs/figma/p02/screenshots/prizes-initial-desktop-1-1611.png",
+    "sourceScreenshot": "docs/figma/p02/screenshots/desktop-1-1588.png",
+    "nodeId": "1:1611",
+    "crop": {
+      "x": 0,
+      "y": 750,
+      "width": 1440,
+      "height": 1688
+    },
+    "kind": "Lossless spatial crop of original Figma PNG, no generated design."
+  }
+]

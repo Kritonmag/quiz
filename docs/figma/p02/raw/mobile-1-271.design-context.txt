@@ -1,0 +1,826 @@
+const imgDoneRound = "https://www.figma.com/api/mcp/asset/1b647a8b-7f5b-438d-93fe-d015b5855828.svg";
+const imgRzdLogo1 = "https://www.figma.com/api/mcp/asset/3a8adfd4-2e3b-4908-8ee9-c32071e5ef45.png";
+const imgMenuIcon = "https://www.figma.com/api/mcp/asset/cd24d9cf-71be-4a7c-b846-143f79ef4dd1.svg";
+const img0052 = "https://www.figma.com/api/mcp/asset/107c924b-b193-4351-8dbe-391433f0bb17.png";
+const imgImage634450437 = "https://www.figma.com/api/mcp/asset/5896094c-e7d9-474e-bdb7-e3094300f10b.png";
+const imgImage634450448 = "https://www.figma.com/api/mcp/asset/6cae3f60-7373-498b-9b2d-f56d78dec16b.png";
+const imgImage634450449 = "https://www.figma.com/api/mcp/asset/a7a832d5-b80a-4a77-a68f-60032c6c0e59.png";
+const imgImage634450450 = "https://www.figma.com/api/mcp/asset/9cb27d0e-79f4-4165-b96d-c9c5aed70039.png";
+const imgImage634450451 = "https://www.figma.com/api/mcp/asset/fc5f5a9d-ee08-465f-b761-7e93fb0aac8f.png";
+const imgImage634450452 = "https://www.figma.com/api/mcp/asset/621c1d6b-892e-4fe7-a5c3-4a54080e3d25.png";
+const imgImage634450453 = "https://www.figma.com/api/mcp/asset/adc90a60-bfd3-4afb-a561-65c7287ffc87.png";
+const imgImage634450454 = "https://www.figma.com/api/mcp/asset/bf4e6a37-c9c4-4e5e-9196-d55209d03d65.png";
+const img202500041 = "https://www.figma.com/api/mcp/asset/c609b6b7-85df-4c5f-ae5c-fd0547ba15ec.png";
+const imgFrame2131330041 = "https://www.figma.com/api/mcp/asset/16b3d0f5-96de-4a6c-9c5b-5145dd645e1b.svg";
+const imgRectangle240650885 = "https://www.figma.com/api/mcp/asset/26f0102b-10c0-4d92-a0ae-fe8e3282c0fa.svg";
+const imgRectangle240650884 = "https://www.figma.com/api/mcp/asset/bce141e1-0cfc-45de-b83a-87a7b4b86d70.svg";
+const imgRectangle240650886 = "https://www.figma.com/api/mcp/asset/3835e287-f0d4-4db7-94c5-4546fde708be.svg";
+const imgRectangle240650887 = "https://www.figma.com/api/mcp/asset/2fefca75-7e0a-40e8-a816-ae3a2043926d.svg";
+const imgSubtract = "https://www.figma.com/api/mcp/asset/0db213ec-f124-410d-9529-b36bb4878555.svg";
+const imgVector4558Stroke = "https://www.figma.com/api/mcp/asset/903abe63-1cc7-4259-88b5-0674174daab2.svg";
+const imgVector4556 = "https://www.figma.com/api/mcp/asset/24d9d503-a127-4107-9c4e-f4d32b9b9d20.svg";
+const imgUnion = "https://www.figma.com/api/mcp/asset/add431a3-c1db-4ecb-ac57-e9e116a172a8.svg";
+const imgVector4557 = "https://www.figma.com/api/mcp/asset/1c8dd52b-9987-4052-b553-e60d5e0f8814.svg";
+const imgVector4558 = "https://www.figma.com/api/mcp/asset/5d6c9dbc-db92-48b6-8cb1-109e3e94b454.svg";
+const imgDoneRound1 = "https://www.figma.com/api/mcp/asset/56a6cc60-fe5f-4dba-8a0e-64314ed20c2e.svg";
+const imgImage = "https://www.figma.com/api/mcp/asset/5518ab4e-3eb0-4cfe-a5fc-56885b0666a5.svg";
+const imgImage1 = "https://www.figma.com/api/mcp/asset/31ab226e-6ddf-46d6-baa5-477e0733d525.svg";
+const imgRectangle240650891 = "https://www.figma.com/api/mcp/asset/d1c3c92c-072d-49fc-adba-ac7ccef7877f.svg";
+const imgVector4559 = "https://www.figma.com/api/mcp/asset/a9e03f2b-98e9-416f-a362-3fedb97d6271.svg";
+const imgBgConfetti = "https://www.figma.com/api/mcp/asset/fea02660-76c8-4d05-b7d8-b5573c7685bf.svg";
+const imgSubtract1 = "https://www.figma.com/api/mcp/asset/9345627f-043f-4032-befd-5cec7972c496.svg";
+const imgSubtract2 = "https://www.figma.com/api/mcp/asset/330d85c4-08fd-457b-bb5a-19e4cae15a71.svg";
+const imgSubtract3 = "https://www.figma.com/api/mcp/asset/eb84c22a-e642-4342-b5ce-ebdbf0352987.svg";
+const imgVector4560 = "https://www.figma.com/api/mcp/asset/a2f5f5ba-1743-4aaa-b92d-691c0baa3f5f.svg";
+const imgVector4561 = "https://www.figma.com/api/mcp/asset/d93bfeda-68d1-429e-9e32-f6ec43626e56.svg";
+const imgFrame2131330124 = "https://www.figma.com/api/mcp/asset/bc68a246-d01e-4a7d-98c3-4270e6e6e891.svg";
+const imgFrame2131330042 = "https://www.figma.com/api/mcp/asset/97bcdc47-ac50-4de2-b1bb-1d176d02f026.svg";
+const imgGroup16 = "https://www.figma.com/api/mcp/asset/4f492e51-636a-4f95-81d3-428686e08c23.svg";
+const imgGroup21 = "https://www.figma.com/api/mcp/asset/ac1b9c0c-e060-4e9c-b8a5-05779f68b755.svg";
+const imgGroup18 = "https://www.figma.com/api/mcp/asset/a4889678-3768-42a3-aa85-cc88ccdbcff7.svg";
+const imgVkCompactLogo2021Present1 = "https://www.figma.com/api/mcp/asset/4f44c21f-4091-40ad-9f91-84374f3385cd.svg";
+const imgTelegram2019Logo1 = "https://www.figma.com/api/mcp/asset/7f228e62-5634-4c61-9bd4-84ed23111440.svg";
+
+function DoneRound({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[24px]"} data-node-id="1:315" data-name="Done_round">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDoneRound} />
+    </div>
+  );
+}
+
+type NavbarProps = {
+  className?: string;
+  color?: "Light";
+  device?: "Mobile";
+  state?: "Default";
+};
+
+function Navbar({ className, color = "Light", device = "Mobile", state = "Default" }: NavbarProps) {
+  return (
+    <div className={className || "bg-white h-[56px] overflow-clip relative w-[375px]"} data-node-id="1:1575">
+      <div className="-translate-y-1/2 absolute left-[319px] size-[40px] top-1/2" data-node-id="1:1576" data-name="menu icon">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgMenuIcon} />
+      </div>
+      <div className="-translate-y-1/2 absolute h-[26.595px] left-[16px] top-[calc(50%+0.42px)] w-[120px]" data-node-id="1:1578" data-name="LOGO">
+        <div className="absolute h-[25.946px] left-0 top-0 w-[42.811px]" data-node-id="1:1579" data-name="rzd-logo 1">
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <img alt="" className="absolute h-[100.05%] left-0 max-w-none top-[-0.03%] w-[277.27%]" src={imgRzdLogo1} />
+          </div>
+        </div>
+        <p className="[word-break:break-word] absolute font-['FSRAILWAY_Book:Regular'] leading-[0] left-[52.54px] not-italic text-[#0b0b0b] text-[11.027px] top-[0.65px] tracking-[0.2205px] uppercase whitespace-nowrap" data-node-id="1:1580">
+          <span className="leading-[normal]">{`ДЛЯ `}</span>
+          <span className="leading-[normal] tracking-[0.48px]">Л</span>
+          <span className="leading-[normal] tracking-[0.64px]">ю</span>
+          <span className="leading-[normal]">д</span>
+          <span className="leading-[normal] tracking-[0.16px]">е</span>
+          <span className="leading-[normal]">
+            й<br aria-hidden />Д
+          </span>
+          <span className="leading-[normal] tracking-[0.64px]">ЕЛ</span>
+          <span className="leading-[normal]">А</span>
+        </p>
+      </div>
+    </div>
+  );
+}
+
+export default function Mob() {
+  return (
+    <div className="bg-white content-stretch flex items-center relative size-full" data-node-id="1:271" data-name="mob">
+      <div className="content-stretch flex flex-col items-start relative shrink-0 w-[375px]" data-node-id="1:272">
+        <div className="bg-[#f60000] h-[807px] overflow-clip relative shrink-0 w-full" data-node-id="1:273" data-name="hero">
+          <Navbar className="absolute bg-white h-[56px] left-0 overflow-clip top-0 w-[375px]" />
+          <div className="absolute flex h-[68.944px] items-center justify-center left-[-95.88px] top-[181.64px] w-[424.677px]" data-node-id="1:275">
+            <div className="-rotate-2 flex-none">
+              <div className="h-[54.213px] relative w-[423.043px]">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame2131330041} />
+              </div>
+            </div>
+          </div>
+          <p className="[word-break:break-word] absolute font-['RussianRail_G_Pro:Medium'] leading-[normal] left-[96px] not-italic text-[14px] text-white top-[100px] tracking-[1.4px] uppercase whitespace-nowrap" data-node-id="1:279">
+            интерактивная игра
+          </p>
+          <div className="absolute contents left-[29.38px] top-[290px]" data-node-id="1:280" data-name="PATTERN">
+            <div className="absolute contents left-[157.74px] top-[290px]" data-node-id="1:281">
+              <div className="absolute h-[337.645px] left-[157.74px] top-[468.72px] w-[276.629px]" data-node-id="1:282">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgRectangle240650885} />
+              </div>
+              <div className="absolute h-[178.716px] left-[370px] top-[290px] w-[223.639px]" data-node-id="1:283">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgRectangle240650884} />
+              </div>
+            </div>
+            <div className="absolute contents left-[29.38px] top-[290px]" data-node-id="1:284">
+              <div className="absolute h-[337.645px] left-[29.38px] top-[468.72px] w-[276.629px]" data-node-id="1:285">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgRectangle240650885} />
+              </div>
+              <div className="absolute h-[178.716px] left-[241.64px] top-[290px] w-[223.639px]" data-node-id="1:286">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgRectangle240650884} />
+              </div>
+            </div>
+            <div className="absolute contents left-[258px] top-[290px]" data-node-id="1:287">
+              <div className="absolute h-[337.645px] left-[258px] top-[468.72px] w-[276.629px]" data-node-id="1:288">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgRectangle240650885} />
+              </div>
+              <div className="absolute h-[178.716px] left-[470.27px] top-[290px] w-[223.639px]" data-node-id="1:289">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgRectangle240650884} />
+              </div>
+            </div>
+            <div className="absolute contents left-[357px] top-[290.64px]" data-node-id="1:290">
+              <div className="absolute h-[337.645px] left-[357px] top-[469.35px] w-[264.055px]" data-node-id="1:291">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgRectangle240650886} />
+              </div>
+              <div className="absolute h-[178.716px] left-[571.06px] top-[290.64px] w-[176.636px]" data-node-id="1:292">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgRectangle240650887} />
+              </div>
+            </div>
+          </div>
+          <div className="absolute h-[273px] left-[19px] overflow-clip top-[330px] w-[335px]" data-node-id="1:293" data-name="image">
+            <div className="-translate-x-1/2 absolute backdrop-blur-[12px] bg-[rgba(255,255,255,0.68)] h-[40px] left-1/2 top-0 w-[291px]" data-node-id="1:294" />
+            <div className="-translate-x-1/2 absolute backdrop-blur-[12px] bg-[rgba(255,255,255,0.68)] h-[20px] left-1/2 top-[12px] w-[311px]" data-node-id="1:295" />
+            <div className="absolute h-[246px] left-0 overflow-clip top-[27px] w-[335px]" data-node-id="1:296" data-name="Hero Cards">
+              <div className="-translate-x-1/2 absolute bg-white h-[246px] left-1/2 overflow-clip top-0 w-[335px]" data-node-id="I1:296;1:1414">
+                <p className="[word-break:break-word] absolute font-['RussianRail_G_Pro:Regular'] leading-[22px] left-[16px] not-italic text-[#4b4b4b] text-[14px] top-[16px] w-[183px]" data-node-id="I1:296;1:1415">
+                  Правда ли, что сигналист отвечает за безопасность железнодорожников на путях?
+                </p>
+                <div className="absolute h-[246px] left-[211px] top-0 w-[124px]" data-node-id="I1:296;1:1416" data-name="image">
+                  <div className="absolute h-[223px] left-[22px] top-0 w-[125px]" data-node-id="I1:296;1:1417" data-name="Subtract">
+                    <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSubtract} />
+                  </div>
+                  <div className="-translate-x-1/2 absolute h-[253px] left-[calc(50%-11.5px)] top-[17px] w-[167px]" data-node-id="I1:296;1:1418" data-name="Монтёр пути на белом фоне (ЦБР) 005 2">
+                    <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                      <img alt="" className="absolute h-[142.85%] left-[-8.9%] max-w-none top-[-5.21%] w-[131.18%]" src={img0052} />
+                    </div>
+                  </div>
+                </div>
+                <div className="absolute content-stretch flex flex-col gap-[8px] items-start left-[16px] top-[158px] w-[140px]" data-node-id="I1:296;1:1420">
+                  <div className="content-stretch flex h-[32px] items-center relative shrink-0 w-full" data-node-id="I1:296;1:1421" data-name="button">
+                    <div className="bg-white border-[#b2b2b2] border-b border-l border-solid border-t h-full relative shrink-0 w-[14px]" data-node-id="I1:296;1:1422" />
+                    <div className="bg-white border-[#b2b2b2] border-b border-solid border-t flex-[1_0_0] h-full min-w-px overflow-clip relative" data-node-id="I1:296;1:1423" data-name="Button">
+                      <div className="-translate-x-1/2 -translate-y-1/2 absolute content-stretch flex gap-[8px] items-center left-[calc(50%-0.29px)] top-1/2" data-node-id="I1:296;1:1424">
+                        <div className="h-[12.144px] relative shrink-0 w-[17.42px]" data-node-id="I1:296;1:1425" data-name="Vector 4558 (Stroke)">
+                          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector4558Stroke} />
+                        </div>
+                        <p className="[word-break:break-word] font-['RussianRail_G_Pro:Medium'] leading-[22px] not-italic relative shrink-0 text-[#4b4b4b] text-[14px] tracking-[-0.1px] uppercase whitespace-nowrap" data-node-id="I1:296;1:1426" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                          ДА
+                        </p>
+                      </div>
+                    </div>
+                    <div className="h-full relative shrink-0 w-[14px]" data-node-id="I1:296;1:1427">
+                      <div className="absolute inset-[-1.56%_-3.57%_-1.32%_-1.9%]">
+                        <img alt="" className="block max-w-none size-full" src={imgVector4556} />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="content-stretch flex h-[32px] items-center relative shrink-0 w-full" data-node-id="I1:296;1:1428" data-name="button">
+                    <div className="bg-white border-[#b2b2b2] border-b border-l border-solid border-t h-full relative shrink-0 w-[14px]" data-node-id="I1:296;1:1429" />
+                    <div className="bg-white border-[#b2b2b2] border-b border-solid border-t flex-[1_0_0] h-full min-w-px overflow-clip relative" data-node-id="I1:296;1:1430" data-name="Button">
+                      <div className="-translate-x-1/2 -translate-y-1/2 absolute content-stretch flex gap-[8px] items-center left-[calc(50%+0.36px)] top-1/2" data-node-id="I1:296;1:1431">
+                        <div className="h-[12.728px] relative shrink-0 w-[12.729px]" data-node-id="I1:296;1:1432" data-name="Union">
+                          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgUnion} />
+                        </div>
+                        <p className="[word-break:break-word] font-['RussianRail_G_Pro:Medium'] leading-[22px] not-italic relative shrink-0 text-[#4b4b4b] text-[14px] tracking-[-0.1px] uppercase whitespace-nowrap" data-node-id="I1:296;1:1433" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                          нет
+                        </p>
+                      </div>
+                    </div>
+                    <div className="h-full relative shrink-0 w-[14px]" data-node-id="I1:296;1:1434">
+                      <div className="absolute inset-[-1.56%_-3.57%_-1.32%_-1.9%]">
+                        <img alt="" className="block max-w-none size-full" src={imgVector4556} />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="[word-break:break-word] absolute content-stretch flex flex-col gap-[12px] items-end left-[14px] not-italic text-center text-white top-[138px] w-[345px]" data-node-id="1:297">
+            <p className="font-['RussianRail_G_Pro:Extended_Bold'] leading-[0] relative shrink-0 text-[0px] tracking-[-1.5px] uppercase w-[343px]" data-node-id="1:298">
+              <span className="leading-[50px] text-[50px]">
+                железные
+                <br aria-hidden />
+              </span>
+              <span className="leading-[50px] text-[#f60000] text-[50px]">факты</span>
+            </p>
+            <p className="font-['FSRAILWAY_Book:Regular'] leading-[24px] min-w-full relative shrink-0 text-[18px] w-[min-content]" data-node-id="1:299">
+              Угадайте, как устроена работа в РЖД, и выиграйте призы!
+            </p>
+          </div>
+          <div className="absolute content-stretch flex flex-col items-start left-[16px] top-[635px] w-[343px]" data-node-id="1:300">
+            <div className="bg-[#393939] h-[36px] overflow-clip relative shrink-0 w-full" data-node-id="1:301">
+              <p className="[word-break:break-word] absolute font-['FSRAIL_medium:Medium'] leading-[16px] left-[-174px] not-italic text-[12px] text-white top-[11px] tracking-[0.36px] uppercase whitespace-pre" data-node-id="1:302">{`подарок уже через 10 вопросов  •  подарок уже через 10 вопросов  •  подарок уже через 10 вопросов  `}</p>
+            </div>
+            <div className="content-stretch flex h-[48px] items-center relative shrink-0 w-[343px]" data-node-id="1:303" data-name="Button">
+              <div className="bg-white h-full relative shrink-0 w-[14px]" data-node-id="I1:303;1:1383" />
+              <div className="bg-white content-stretch flex h-full items-center justify-center overflow-clip pb-[10px] pt-[14px] px-[8px] relative shrink-0 w-[315px]" data-node-id="I1:303;1:1384" data-name="Button">
+                <p className="[word-break:break-word] font-['RussianRail_G_Pro:Medium'] leading-[30px] not-italic relative shrink-0 text-[#f60000] text-[22px] tracking-[-0.1px] uppercase whitespace-nowrap" data-node-id="I1:303;1:1385" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                  начать игру
+                </p>
+              </div>
+              <div className="h-full relative shrink-0 w-[14px]" data-node-id="I1:303;1:1386">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector4557} />
+              </div>
+            </div>
+          </div>
+          <div className="absolute bottom-0 h-[32px] right-0 w-[157px]" data-node-id="1:304">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector4558} />
+          </div>
+        </div>
+        <div className="bg-white h-[2158px] overflow-clip relative shrink-0 w-full" data-node-id="1:305" data-name="призы">
+          <div className="absolute content-stretch flex flex-col gap-[28px] items-start left-[16px] top-[56px] w-[343px]" data-node-id="1:306">
+            <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-full" data-node-id="1:307" data-name="text">
+              <p className="[word-break:break-word] font-['RussianRail_G_Pro:Medium'] leading-[normal] not-italic relative shrink-0 text-[12px] text-black text-center tracking-[0.6px] uppercase w-full" data-node-id="1:308">
+                что можно получить
+              </p>
+              <div className="content-stretch flex flex-col gap-[16px] items-center relative shrink-0 w-full" data-node-id="1:309">
+                <div className="[word-break:break-word] content-stretch flex flex-col gap-[8px] items-start not-italic relative shrink-0 text-center w-full" data-node-id="1:310">
+                  <p className="font-['RussianRail_G_Pro:Medium'] leading-[0] relative shrink-0 text-[0px] text-black uppercase w-full whitespace-pre-wrap" data-node-id="1:311">
+                    <span className="leading-[36px] text-[32px]">
+                      {`чем больше играете — `}
+                      <br aria-hidden />
+                    </span>
+                    <span className="leading-[36px] text-[#e21a1a] text-[32px]">тем больше призов</span>
+                  </p>
+                  <p className="font-['FSRAILWAY_Book:Regular'] leading-[24px] relative shrink-0 text-[#4b4b4b] text-[16px] w-full" data-node-id="1:312">
+                    Не знаете ответа? Доверьтесь интуиции и играйте!
+                  </p>
+                </div>
+                <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full" data-node-id="1:313">
+                  <div className="content-stretch flex gap-[12px] items-start relative shrink-0 w-full" data-node-id="1:314">
+                    <DoneRound className="relative shrink-0 size-[24px]" />
+                    <p className="[word-break:break-word] flex-[1_0_0] font-['FSRAILWAY_Book:Regular'] leading-[24px] min-w-px not-italic relative text-[#4b4b4b] text-[16px]" data-node-id="1:317">
+                      В первые 10 секунд правильный ответ принесет 1000 баллов. Чем быстрее ответите, тем больше баллов получите!
+                    </p>
+                  </div>
+                  <div className="content-stretch flex gap-[12px] items-start relative shrink-0 w-full" data-node-id="1:318">
+                    <div className="relative shrink-0 size-[24px]" data-node-id="1:319" data-name="Done_round">
+                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDoneRound1} />
+                    </div>
+                    <p className="[word-break:break-word] flex-[1_0_0] font-['FSRAILWAY_Book:Regular'] leading-[24px] min-w-px not-italic relative text-[#4b4b4b] text-[16px]" data-node-id="1:320">
+                      10 секунд вышло? Можно ответить и после, но за правильный ответ получите только 500 баллов
+                    </p>
+                  </div>
+                  <div className="content-stretch flex gap-[12px] items-start relative shrink-0 w-full" data-node-id="1:321">
+                    <div className="relative shrink-0 size-[24px]" data-node-id="1:322" data-name="Done_round">
+                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgDoneRound1} />
+                    </div>
+                    <p className="[word-break:break-word] flex-[1_0_0] font-['FSRAILWAY_Book:Regular'] leading-[24px] min-w-px not-italic relative text-[#4b4b4b] text-[16px]" data-node-id="1:323">
+                      Неправильный ответ — всегда 0 баллов
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-full" data-node-id="1:324" data-name="cards container">
+              <div className="bg-[#f5f5f5] h-[522px] overflow-clip relative shrink-0 w-full" data-node-id="1:325" data-name="card">
+                <p className="[word-break:break-word] absolute font-['RussianRail_G_Pro:Regular'] leading-[normal] left-[20px] not-italic text-[#4b4b4b] text-[14px] top-[24px] tracking-[0.7px] uppercase whitespace-nowrap" data-node-id="1:326">
+                  / гарантированный подарок
+                </p>
+                <div className="[word-break:break-word] absolute content-stretch flex flex-col gap-[8px] items-start left-[20px] not-italic top-[73px] w-[301px]" data-node-id="1:327">
+                  <p className="font-['RussianRail_G_Pro:Medium'] leading-[0] relative shrink-0 text-[#e21a1a] text-[0px] w-full" data-node-id="1:328">
+                    <span className="leading-[32px] text-[#555] text-[28px]">ПОДАРОЧНЫЙ ПРОМОКОД</span>
+                    <span className="leading-[32px] text-[28px]">{` НА `}</span>
+                    <span className="leading-[32px] text-[28px]">ВПЕЧАТЛЕНИЯ</span>
+                  </p>
+                  <p className="font-['FSRAILWAY_Book:Regular'] leading-[24px] relative shrink-0 text-[#4b4b4b] text-[16px] w-full" data-node-id="1:329">
+                    После первого раунда каждый участник получит промокод на скидку при бронировании отеля или экскурсии на сайте «РЖД Плюс»
+                  </p>
+                </div>
+                <div className="absolute h-[225px] left-0 top-[297px] w-[343px]" data-node-id="1:330" data-name="image">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgImage} />
+                </div>
+              </div>
+              <div className="bg-[#e6e6e6] h-[498px] overflow-clip relative shrink-0 w-full" data-node-id="1:574" data-name="card">
+                <p className="[word-break:break-word] absolute font-['RussianRail_G_Pro:Regular'] leading-[normal] left-[20px] not-italic text-[#4b4b4b] text-[14px] top-[24px] tracking-[0.7px] uppercase whitespace-nowrap" data-node-id="1:575">
+                  / Приз за знания
+                </p>
+                <div className="[word-break:break-word] absolute content-stretch flex flex-col gap-[8px] items-start left-[20px] not-italic top-[73px] w-[301px]" data-node-id="1:576">
+                  <p className="font-['RussianRail_G_Pro:Medium'] leading-[0] relative shrink-0 text-[#e21a1a] text-[0px] uppercase w-full" data-node-id="1:577">
+                    <span className="leading-[32px] text-[#555] text-[28px]">{`ПОДАРОЧНЫЙ СЕРТИФИКАТ `}</span>
+                    <span className="leading-[32px] text-[28px]">{`на `}</span>
+                    <span className="leading-[32px] text-[28px]">500</span>
+                    <span className="leading-[32px] text-[28px]">{` рублей`}</span>
+                  </p>
+                  <p className="font-['FSRAILWAY_Book:Regular'] leading-[24px] relative shrink-0 text-[#4b4b4b] text-[16px] w-full" data-node-id="1:578">
+                    Сертификаты получат 300 участников с лучшими результатами по итогам игры
+                  </p>
+                </div>
+                <div className="absolute h-[225px] left-0 top-[273px] w-[343px]" data-node-id="1:579" data-name="image">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgImage1} />
+                </div>
+              </div>
+              <div className="bg-[#e6e6e6] h-[498px] overflow-clip relative shrink-0 w-full" data-node-id="1:629" data-name="card">
+                <div className="absolute h-[498px] left-[-365px] top-0 w-[830px]" data-node-id="1:630" data-name="image 634450437">
+                  <div aria-hidden className="absolute inset-0 pointer-events-none">
+                    <div className="absolute inset-0 overflow-hidden">
+                      <img alt="" className="absolute h-[151.77%] left-[6.19%] max-w-none top-[-25.84%] w-[151.84%]" src={imgImage634450437} />
+                    </div>
+                    <div className="absolute bg-[#e21a1a] inset-0 mix-blend-color" />
+                    <div className="absolute inset-0" style={{ backgroundImage: "linear-gradient(89.99999999999999deg, rgb(226, 26, 26) 11.587%, rgba(226, 26, 26, 0) 69.394%), linear-gradient(149.7568268169456deg, rgb(226, 26, 26) 29.323%, rgba(228, 132, 49, 0.16) 85.052%)" }} />
+                  </div>
+                </div>
+                <div className="[word-break:break-word] absolute content-stretch flex flex-col gap-[8px] items-start left-[20px] not-italic top-[73px] w-[301px]" data-node-id="1:631">
+                  <p className="font-['RussianRail_G_Pro:Medium'] leading-[0] relative shrink-0 text-[0px] text-white uppercase w-full" data-node-id="1:632">
+                    <span className="leading-[32px] text-[28px]">3</span>
+                    <span className="leading-[32px] text-[28px]">{` сертифика`}</span>
+                    <span className="leading-[32px] text-[28px]">ТА</span>
+                    <span className="leading-[32px] text-[28px]">{` `}</span>
+                    <span className="leading-[32px] text-[28px]">{`на `}</span>
+                    <span className="leading-[32px] text-[28px]">5</span>
+                    <span className="leading-[32px] text-[28px]">0 000 рублей</span>
+                  </p>
+                  <p className="font-['FSRAILWAY_Book:Regular'] leading-[24px] relative shrink-0 text-[16px] text-[rgba(255,255,255,0.82)] w-full" data-node-id="1:633">
+                    Три участника с максимальным количеством баллов получат по сертификату на путешествие
+                  </p>
+                </div>
+                <p className="[word-break:break-word] absolute font-['RussianRail_G_Pro:Regular'] leading-[normal] left-[20px] not-italic text-[14px] text-white top-[24px] tracking-[0.7px] uppercase whitespace-nowrap" data-node-id="1:634">
+                  / Приз за знания
+                </p>
+                <div className="absolute left-[295px] size-[48px] top-[450px]" data-node-id="1:635">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgRectangle240650891} />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="absolute bottom-0 h-[32px] right-0 w-[157px]" data-node-id="1:636">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector4559} />
+          </div>
+        </div>
+        <div className="bg-[#f5f5f5] h-[971px] overflow-clip relative shrink-0 w-full" data-node-id="1:637">
+          <div className="absolute h-[905px] left-[-125px] top-[45px] w-[679px]" data-node-id="1:638" data-name="BG_Confetti">
+            <div className="absolute inset-[-4.51%_-2.68%_-0.97%_-6.49%]">
+              <img alt="" className="block max-w-none size-full" src={imgBgConfetti} />
+            </div>
+          </div>
+          <div className="-translate-x-1/2 [word-break:break-word] absolute content-stretch flex flex-col font-['RussianRail_G_Pro:Medium'] gap-[16px] items-start left-1/2 not-italic text-black text-center top-[64px] uppercase w-[343px]" data-node-id="1:660" data-name="text">
+            <p className="leading-[normal] relative shrink-0 text-[12px] tracking-[0.6px] w-full" data-node-id="1:661">
+              Турнирная таблица
+            </p>
+            <p className="leading-[0] relative shrink-0 text-[32px] w-full" data-node-id="1:662">
+              <span className="leading-[36px] text-[#e21a1a]">Топ-10</span>
+              <span className="leading-[36px]">{` `}</span>
+              <span className="leading-[36px]">игроков</span>
+            </p>
+          </div>
+          <div className="absolute content-stretch flex flex-col gap-[24px] items-start left-0 top-[152px] w-[375px]" data-node-id="1:663">
+            <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[0] place-items-start relative shrink-0" data-node-id="1:664">
+              <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-[115px] mt-0 place-items-start relative row-1" data-node-id="1:665">
+                <div className="bg-[#e21a1a] col-1 h-[181px] ml-0 mt-[46px] overflow-clip relative row-1 w-[145px]" data-node-id="1:666">
+                  <div className="[word-break:break-word] absolute content-stretch flex flex-col gap-[8px] h-[62px] items-start left-[12px] not-italic text-white top-[26px] uppercase w-[124px]" data-node-id="1:667">
+                    <p className="font-['RussianRail_G_Pro:Regular'] leading-[14px] relative shrink-0 text-[12px] tracking-[0.6px] w-full" data-node-id="1:668">
+                      / 1 место
+                    </p>
+                    <p className="flex-[1_0_0] font-['RussianRail_G_Pro:Medium'] leading-[20px] min-h-px relative text-[16px] w-full" data-node-id="1:669">
+                      Светлана Куликова
+                    </p>
+                  </div>
+                  <p className="[word-break:break-word] absolute font-['FSRAIL_medium:Medium'] leading-[16px] left-[12px] not-italic text-[12px] text-white top-[153px] uppercase whitespace-nowrap" data-node-id="1:670">
+                    14 500 баллов
+                  </p>
+                  <div className="absolute bottom-[-11px] h-[112px] right-[-19px] w-[70px]" data-node-id="1:671" data-name="Subtract">
+                    <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSubtract1} />
+                  </div>
+                </div>
+                <div className="border-2 border-[#f5f5f5] border-solid col-1 ml-[45px] mt-0 relative rounded-[100px] row-1 size-[56px]" data-node-id="1:672" data-name="image 634450448">
+                  <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[100px] size-full" src={imgImage634450448} />
+                </div>
+              </div>
+              <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-0 mt-[23px] place-items-start relative row-1" data-node-id="1:673">
+                <div className="bg-[#f1c9c9] col-1 h-[158px] ml-0 mt-[46px] overflow-clip relative row-1 w-[115px]" data-node-id="1:674">
+                  <div className="absolute bottom-[-8px] h-[105px] right-[-21.08px] w-[68.158px]" data-node-id="1:675" data-name="Subtract">
+                    <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSubtract2} />
+                  </div>
+                  <div className="[word-break:break-word] absolute content-stretch flex flex-col gap-[8px] items-start left-[10px] not-italic text-[#e21a1a] top-[20px] uppercase w-[97px]" data-node-id="1:676">
+                    <p className="font-['RussianRail_G_Pro:Regular'] leading-[14px] relative shrink-0 text-[12px] tracking-[0.6px] w-full" data-node-id="1:677">
+                      / 2 место
+                    </p>
+                    <p className="font-['RussianRail_G_Pro:Medium'] leading-[18px] relative shrink-0 text-[14px] w-full" data-node-id="1:678">
+                      Михаил нагоров
+                    </p>
+                  </div>
+                  <p className="[word-break:break-word] absolute font-['FSRAIL_medium:Medium'] leading-[16px] left-[10px] not-italic text-[#e21a1a] text-[12px] top-[130px] uppercase whitespace-nowrap" data-node-id="1:679">
+                    10 000 баллов
+                  </p>
+                </div>
+                <div className="border-2 border-[#f5f5f5] border-solid col-1 ml-[30px] mt-0 relative rounded-[100px] row-1 size-[56px]" data-node-id="1:680" data-name="image 634450449">
+                  <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[100px] size-full" src={imgImage634450449} />
+                </div>
+              </div>
+              <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-[260px] mt-[29px] place-items-start relative row-1" data-node-id="1:681">
+                <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-0 mt-[46px] place-items-start relative row-1" data-node-id="1:682">
+                  <div className="bg-[#f1c9c9] col-1 h-[152px] ml-0 mt-0 overflow-clip relative row-1 w-[115px]" data-node-id="1:683">
+                    <div className="absolute bottom-[-6px] h-[104px] right-[-20.85px] w-[68.556px]" data-node-id="1:684" data-name="Subtract">
+                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSubtract3} />
+                    </div>
+                    <div className="[word-break:break-word] absolute content-stretch flex flex-col gap-[8px] items-start left-[10px] not-italic text-[#e21a1a] top-[19px] uppercase w-[97px]" data-node-id="1:685">
+                      <p className="font-['RussianRail_G_Pro:Regular'] leading-[14px] relative shrink-0 text-[12px] tracking-[0.6px] w-full" data-node-id="1:686">
+                        / 3 место
+                      </p>
+                      <p className="font-['RussianRail_G_Pro:Medium'] leading-[18px] relative shrink-0 text-[14px] w-full" data-node-id="1:687">
+                        Елена дмитриева
+                      </p>
+                    </div>
+                    <p className="[word-break:break-word] absolute font-['FSRAIL_medium:Medium'] leading-[16px] left-[10px] not-italic text-[#e21a1a] text-[12px] top-[123px] uppercase whitespace-nowrap" data-node-id="1:688">
+                      9000 баллов
+                    </p>
+                  </div>
+                </div>
+                <div className="border-2 border-[#f5f5f5] border-solid col-1 ml-[29px] mt-0 relative rounded-[100px] row-1 size-[56px]" data-node-id="1:689" data-name="image 634450448">
+                  <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[100px] size-full" src={imgImage634450450} />
+                </div>
+              </div>
+            </div>
+            <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="1:690">
+              <div className="bg-[#f5f5f5] content-stretch flex flex-col items-start px-[16px] py-[8px] relative shrink-0 w-full" data-node-id="1:691">
+                <div className="content-stretch flex items-center justify-between relative shrink-0 w-full" data-node-id="1:692">
+                  <div className="content-stretch flex gap-[10px] items-center relative shrink-0" data-node-id="1:693">
+                    <div className="flex flex-row items-center self-stretch" data-node-id="1:694">
+                      <div className="content-stretch flex flex-col h-full items-center justify-center pt-[6px] relative shrink-0 w-[14px]">
+                        <p className="[word-break:break-word] font-['RussianRail_G_Pro:Medium'] leading-[30px] not-italic relative shrink-0 text-[#4b4b4b] text-[22px] uppercase w-full" data-node-id="1:695">
+                          4
+                        </p>
+                      </div>
+                    </div>
+                    <div className="relative rounded-[100px] shrink-0 size-[44px]" data-node-id="1:696" data-name="image 634450448">
+                      <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[100px] size-full" src={imgImage634450451} />
+                    </div>
+                    <div className="flex flex-row items-center self-stretch" data-node-id="1:697">
+                      <div className="content-stretch flex flex-col h-full items-start justify-center pt-[6px] relative shrink-0">
+                        <p className="[word-break:break-word] font-['RussianRail_G_Pro:Medium'] leading-[18px] not-italic relative shrink-0 text-[14px] text-black uppercase w-[160px]" data-node-id="1:698">
+                          Кирилл Хусаинов
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <p className="[word-break:break-word] font-['FSRAIL_medium:Medium'] leading-[16px] not-italic relative shrink-0 text-[12px] text-black text-right uppercase whitespace-nowrap" data-node-id="1:699">
+                    8500 баллов
+                  </p>
+                </div>
+              </div>
+              <div className="bg-white content-stretch flex flex-col items-start px-[16px] py-[8px] relative shrink-0 w-full" data-node-id="1:700">
+                <div className="content-stretch flex items-center justify-between relative shrink-0 w-full" data-node-id="1:701">
+                  <div className="content-stretch flex gap-[10px] items-center relative shrink-0" data-node-id="1:702">
+                    <div className="flex flex-row items-center self-stretch" data-node-id="1:703">
+                      <div className="content-stretch flex flex-col h-full items-center justify-center pt-[6px] relative shrink-0 w-[14px]">
+                        <p className="[word-break:break-word] font-['RussianRail_G_Pro:Medium'] leading-[30px] not-italic relative shrink-0 text-[#4b4b4b] text-[22px] uppercase w-full" data-node-id="1:704">
+                          5
+                        </p>
+                      </div>
+                    </div>
+                    <div className="relative rounded-[100px] shrink-0 size-[44px]" data-node-id="1:705" data-name="image 634450449">
+                      <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[100px] size-full" src={imgImage634450452} />
+                    </div>
+                    <div className="flex flex-row items-center self-stretch" data-node-id="1:706">
+                      <div className="content-stretch flex flex-col h-full items-start justify-center pt-[6px] relative shrink-0">
+                        <p className="[word-break:break-word] font-['RussianRail_G_Pro:Medium'] leading-[18px] not-italic relative shrink-0 text-[14px] text-black uppercase w-[160px]" data-node-id="1:707">
+                          Сергей Литвинов
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <p className="[word-break:break-word] font-['FSRAIL_medium:Medium'] leading-[16px] not-italic relative shrink-0 text-[12px] text-black text-right uppercase whitespace-nowrap" data-node-id="1:708">
+                    8000 баллов
+                  </p>
+                </div>
+              </div>
+              <div className="bg-[#f5f5f5] content-stretch flex flex-col items-start px-[16px] py-[8px] relative shrink-0 w-full" data-node-id="1:709">
+                <div className="content-stretch flex items-center justify-between relative shrink-0 w-full" data-node-id="1:710">
+                  <div className="content-stretch flex gap-[10px] items-center relative shrink-0" data-node-id="1:711">
+                    <div className="flex flex-row items-center self-stretch" data-node-id="1:712">
+                      <div className="content-stretch flex flex-col h-full items-center justify-center pt-[6px] relative shrink-0 w-[14px]">
+                        <p className="[word-break:break-word] font-['RussianRail_G_Pro:Medium'] leading-[30px] not-italic relative shrink-0 text-[#4b4b4b] text-[22px] uppercase w-full" data-node-id="1:713">
+                          6
+                        </p>
+                      </div>
+                    </div>
+                    <div className="relative rounded-[100px] shrink-0 size-[44px]" data-node-id="1:714" data-name="image 634450449">
+                      <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[100px] size-full" src={imgImage634450453} />
+                    </div>
+                    <div className="flex flex-row items-center self-stretch" data-node-id="1:715">
+                      <div className="content-stretch flex flex-col h-full items-start justify-center pt-[6px] relative shrink-0">
+                        <p className="[word-break:break-word] font-['RussianRail_G_Pro:Medium'] leading-[18px] not-italic relative shrink-0 text-[14px] text-black uppercase whitespace-nowrap" data-node-id="1:716">
+                          Дарья андреева
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <p className="[word-break:break-word] font-['FSRAIL_medium:Medium'] leading-[16px] not-italic relative shrink-0 text-[12px] text-black text-right uppercase whitespace-nowrap" data-node-id="1:717">
+                    7500 баллов
+                  </p>
+                </div>
+              </div>
+              <div className="bg-white content-stretch flex flex-col items-start px-[16px] py-[8px] relative shrink-0 w-full" data-node-id="1:718">
+                <div className="content-stretch flex items-center justify-between relative shrink-0 w-full" data-node-id="1:719">
+                  <div className="content-stretch flex items-center justify-between relative shrink-0 w-[189px]" data-node-id="1:720">
+                    <div className="flex flex-row items-center self-stretch" data-node-id="1:721">
+                      <div className="content-stretch flex flex-col h-full items-center justify-center pt-[6px] relative shrink-0 w-[14px]">
+                        <p className="[word-break:break-word] font-['RussianRail_G_Pro:Medium'] leading-[30px] not-italic relative shrink-0 text-[#4b4b4b] text-[22px] uppercase w-full" data-node-id="1:722">
+                          7
+                        </p>
+                      </div>
+                    </div>
+                    <div className="relative rounded-[100px] shrink-0 size-[44px]" data-node-id="1:723" data-name="image 634450448">
+                      <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[100px] size-full" src={imgImage634450450} />
+                    </div>
+                    <div className="flex flex-row items-center self-stretch" data-node-id="1:724">
+                      <div className="content-stretch flex flex-col h-full items-start justify-center pt-[6px] relative shrink-0">
+                        <p className="[word-break:break-word] font-['RussianRail_G_Pro:Medium'] leading-[18px] not-italic relative shrink-0 text-[14px] text-black uppercase w-full" data-node-id="1:725">
+                          Марк Останин
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <p className="[word-break:break-word] font-['FSRAIL_medium:Medium'] leading-[16px] not-italic relative shrink-0 text-[12px] text-black text-right uppercase whitespace-nowrap" data-node-id="1:726">
+                    7000 баллов
+                  </p>
+                </div>
+              </div>
+              <div className="bg-[#f5f5f5] content-stretch flex flex-col items-start px-[16px] py-[8px] relative shrink-0 w-full" data-node-id="1:727">
+                <div className="content-stretch flex items-center justify-between relative shrink-0 w-full" data-node-id="1:728">
+                  <div className="content-stretch flex gap-[10px] items-center relative shrink-0" data-node-id="1:729">
+                    <div className="flex flex-row items-center self-stretch" data-node-id="1:730">
+                      <div className="content-stretch flex flex-col h-full items-center justify-center pt-[6px] relative shrink-0 w-[14px]">
+                        <p className="[word-break:break-word] font-['RussianRail_G_Pro:Medium'] leading-[30px] not-italic relative shrink-0 text-[#4b4b4b] text-[22px] uppercase w-full" data-node-id="1:731">
+                          8
+                        </p>
+                      </div>
+                    </div>
+                    <div className="relative rounded-[100px] shrink-0 size-[44px]" data-node-id="1:732" data-name="image 634450448">
+                      <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[100px] size-full" src={imgImage634450450} />
+                    </div>
+                    <div className="flex flex-row items-center self-stretch" data-node-id="1:733">
+                      <div className="content-stretch flex flex-col h-full items-start justify-center pt-[6px] relative shrink-0">
+                        <p className="[word-break:break-word] font-['RussianRail_G_Pro:Medium'] leading-[18px] not-italic relative shrink-0 text-[14px] text-black uppercase w-[160px]" data-node-id="1:734">
+                          Ольга Доманская
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <p className="[word-break:break-word] font-['FSRAIL_medium:Medium'] leading-[16px] not-italic relative shrink-0 text-[12px] text-black text-right uppercase whitespace-nowrap" data-node-id="1:735">
+                    6500 баллов
+                  </p>
+                </div>
+              </div>
+              <div className="bg-white content-stretch flex flex-col items-start px-[16px] py-[8px] relative shrink-0 w-full" data-node-id="1:736">
+                <div className="content-stretch flex items-center justify-between relative shrink-0 w-full" data-node-id="1:737">
+                  <div className="content-stretch flex gap-[10px] items-center relative shrink-0" data-node-id="1:738">
+                    <div className="flex flex-row items-center self-stretch" data-node-id="1:739">
+                      <div className="content-stretch flex flex-col h-full items-center justify-center pt-[6px] relative shrink-0 w-[14px]">
+                        <p className="[word-break:break-word] font-['RussianRail_G_Pro:Medium'] leading-[30px] not-italic relative shrink-0 text-[#4b4b4b] text-[22px] uppercase w-full" data-node-id="1:740">
+                          9
+                        </p>
+                      </div>
+                    </div>
+                    <div className="relative rounded-[100px] shrink-0 size-[44px]" data-node-id="1:741" data-name="image 634450449">
+                      <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[100px] size-full" src={imgImage634450454} />
+                    </div>
+                    <div className="flex flex-row items-center self-stretch" data-node-id="1:742">
+                      <div className="content-stretch flex flex-col h-full items-start justify-center pt-[6px] relative shrink-0">
+                        <p className="[word-break:break-word] font-['RussianRail_G_Pro:Medium'] leading-[18px] not-italic relative shrink-0 text-[14px] text-black uppercase w-[160px]" data-node-id="1:743">
+                          наталья весна
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <p className="[word-break:break-word] font-['FSRAIL_medium:Medium'] leading-[16px] not-italic relative shrink-0 text-[12px] text-black text-right uppercase whitespace-nowrap" data-node-id="1:744">
+                    6000 баллов
+                  </p>
+                </div>
+              </div>
+              <div className="bg-[#f5f5f5] content-stretch flex flex-col items-start px-[16px] py-[8px] relative shrink-0 w-full" data-node-id="1:745">
+                <div className="content-stretch flex items-center justify-between relative shrink-0 w-full" data-node-id="1:746">
+                  <div className="content-stretch flex gap-[10px] items-center relative shrink-0" data-node-id="1:747">
+                    <div className="h-[44px] relative shrink-0 w-[14px]" data-node-id="1:748">
+                      <p className="[word-break:break-word] absolute font-['RussianRail_G_Pro:Medium'] leading-[30px] left-[-10px] not-italic text-[#4b4b4b] text-[22px] top-[10px] uppercase whitespace-nowrap" data-node-id="1:749">
+                        10
+                      </p>
+                    </div>
+                    <div className="relative rounded-[100px] shrink-0 size-[44px]" data-node-id="1:750" data-name="image 634450448">
+                      <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[100px] size-full" src={imgImage634450450} />
+                    </div>
+                    <div className="content-stretch flex flex-col h-[44px] items-start justify-center pt-[6px] relative shrink-0" data-node-id="1:751">
+                      <p className="[word-break:break-word] font-['RussianRail_G_Pro:Medium'] leading-[18px] not-italic relative shrink-0 text-[14px] text-black uppercase whitespace-nowrap" data-node-id="1:752">
+                        Елизавета Малышева
+                      </p>
+                    </div>
+                  </div>
+                  <p className="[word-break:break-word] font-['FSRAIL_medium:Medium'] leading-[16px] not-italic relative shrink-0 text-[12px] text-black text-right uppercase whitespace-nowrap" data-node-id="1:753">
+                    6000 баллов
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="absolute bottom-0 h-[32px] right-0 w-[157px]" data-node-id="1:754">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector4560} />
+          </div>
+          <div className="-translate-x-1/2 absolute content-stretch flex h-[48px] items-center left-1/2 top-[847px] w-[343px]" data-node-id="1:755" data-name="Button">
+            <div className="bg-[#f60000] h-full relative shrink-0 w-[14px]" data-node-id="I1:755;1:1378" />
+            <div className="bg-[#f60000] content-stretch flex h-full items-center justify-center overflow-clip pb-[10px] pt-[14px] px-[8px] relative shrink-0 w-[315px]" data-node-id="I1:755;1:1379" data-name="Button">
+              <p className="[word-break:break-word] font-['RussianRail_G_Pro:Medium'] leading-[30px] not-italic relative shrink-0 text-[22px] text-white tracking-[-0.1px] uppercase whitespace-nowrap" data-node-id="I1:755;1:1380" style={{ fontFeatureSettings: '"lnum" 1, "pnum" 1' }}>
+                все результаты
+              </p>
+            </div>
+            <div className="h-full relative shrink-0 w-[14px]" data-node-id="I1:755;1:1381">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector4561} />
+            </div>
+          </div>
+        </div>
+        <div className="bg-white h-[824px] overflow-clip relative shrink-0 w-full" data-node-id="1:756">
+          <div className="absolute content-stretch flex flex-col gap-[32px] items-start left-[16px] top-[56px] w-[343px]" data-node-id="1:757">
+            <div className="content-stretch flex flex-col gap-[16px] h-[100px] items-start relative shrink-0 w-full" data-node-id="1:758" data-name="text">
+              <p className="[word-break:break-word] font-['RussianRail_G_Pro:Medium'] leading-[normal] not-italic relative shrink-0 text-[12px] text-black text-center tracking-[0.6px] uppercase w-full" data-node-id="1:759">
+                механика игры
+              </p>
+              <div className="content-stretch flex flex-col gap-[8px] items-center relative shrink-0 w-full" data-node-id="1:760">
+                <p className="[word-break:break-word] font-['RussianRail_G_Pro:Medium'] leading-[0] not-italic relative shrink-0 text-[0px] text-black text-center uppercase w-full" data-node-id="1:761">
+                  <span className="leading-[36px] text-[32px]">ржд больше,</span>
+                  <span className="leading-[36px] text-[32px]">
+                    <br aria-hidden />
+                  </span>
+                  <span className="leading-[36px] text-[#e21a1a] text-[32px]">чем кажется</span>
+                </p>
+              </div>
+            </div>
+            <div className="h-[548px] overflow-clip relative shrink-0 w-full" data-node-id="1:763">
+              <div className="absolute h-[423px] left-[8px] top-[30px] w-[36px]" data-node-id="1:764">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame2131330124} />
+              </div>
+              <div className="[word-break:break-word] absolute content-stretch flex flex-col gap-[40px] items-start left-[68px] not-italic top-0 w-[242px]" data-node-id="1:769">
+                <div className="content-stretch flex flex-col gap-[4px] items-start relative shrink-0 w-full" data-node-id="1:770">
+                  <p className="font-['RussianRail_G_Pro:Extended_Bold'] leading-[80px] relative shrink-0 text-[#ff5757] text-[80px] tracking-[-3.2px] uppercase w-full" data-node-id="1:771">
+                    10
+                  </p>
+                  <div className="content-stretch flex flex-col gap-[8px] items-start leading-[24px] relative shrink-0 w-full" data-node-id="1:772">
+                    <p className="font-['RussianRail_G_Pro:Medium'] relative shrink-0 text-[#ff5757] text-[20px] tracking-[-0.8px] uppercase whitespace-nowrap" data-node-id="1:773">
+                      раундов
+                    </p>
+                    <p className="font-['FSRAILWAY_Book:Regular'] min-w-full relative shrink-0 text-[#4b4b4b] text-[16px] w-[min-content]" data-node-id="1:774">
+                      Первый подарок уже после первого раунда
+                    </p>
+                  </div>
+                </div>
+                <div className="content-stretch flex flex-col gap-[4px] items-start relative shrink-0 w-full" data-node-id="1:775">
+                  <p className="font-['RussianRail_G_Pro:Extended_Bold'] leading-[80px] relative shrink-0 text-[#e43f3f] text-[80px] tracking-[-3.2px] uppercase w-full" data-node-id="1:776">
+                    10
+                  </p>
+                  <div className="content-stretch flex flex-col gap-[8px] items-start leading-[24px] relative shrink-0 w-full" data-node-id="1:777">
+                    <p className="font-['RussianRail_G_Pro:Medium'] relative shrink-0 text-[#e43f3f] text-[20px] tracking-[-0.8px] uppercase whitespace-nowrap" data-node-id="1:778">
+                      вопросов
+                    </p>
+                    <p className="font-['FSRAILWAY_Book:Regular'] min-w-full relative shrink-0 text-[#4b4b4b] text-[16px] w-[min-content]" data-node-id="1:779">
+                      Содержится в каждом раунде
+                    </p>
+                  </div>
+                </div>
+                <div className="content-stretch flex flex-col gap-[4px] items-start relative shrink-0 w-full" data-node-id="1:780">
+                  <p className="font-['RussianRail_G_Pro:Extended_Bold'] leading-[80px] relative shrink-0 text-[#e21a1a] text-[80px] tracking-[-3.2px] uppercase w-full" data-node-id="1:781">
+                    100
+                  </p>
+                  <div className="content-stretch flex flex-col gap-[8px] items-start leading-[24px] relative shrink-0 w-full" data-node-id="1:782">
+                    <p className="font-['RussianRail_G_Pro:Medium'] relative shrink-0 text-[#e21a1a] text-[20px] tracking-[-0.8px] uppercase whitespace-nowrap" data-node-id="1:783">
+                      фактов
+                    </p>
+                    <p className="font-['FSRAILWAY_Book:Regular'] min-w-full relative shrink-0 text-[#4b4b4b] text-[16px] w-[min-content]" data-node-id="1:784">
+                      О людях, профессиях и технологиях РЖД
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="absolute bottom-0 h-[32px] right-0 w-[157px]" data-node-id="1:785">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector4559} />
+          </div>
+        </div>
+        <div className="bg-[#f5f5f5] h-[702px] overflow-clip relative shrink-0 w-[375px]" data-node-id="1:786">
+          <div className="absolute flex h-[53.475px] items-center justify-center left-[-20px] top-[63px] w-[162.903px]" data-node-id="1:787">
+            <div className="-rotate-2 flex-none">
+              <div className="h-[47.874px] relative w-[161.33px]">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame2131330042} />
+              </div>
+            </div>
+          </div>
+          <div className="absolute content-stretch flex flex-col items-start left-[16px] top-[30px] w-[344px]" data-node-id="1:791" data-name="text">
+            <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0 w-full" data-node-id="1:792" data-name="text">
+              <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="1:793">
+                <div className="[word-break:break-word] font-['RussianRail_G_Pro:Medium'] leading-[0] not-italic relative shrink-0 text-[#4b4b4b] text-[0px] uppercase w-full" data-node-id="1:794">
+                  <p className="mb-0 text-[42px]">
+                    <span className="leading-[44px]">{`узнавайте `}</span>
+                    <span className="leading-[44px] text-white">РЖД</span>
+                  </p>
+                  <p className="leading-[44px] text-[42px]">С ЖЕЛЕЗНЫМИ ФАКТАМИ</p>
+                </div>
+              </div>
+              <p className="[word-break:break-word] font-['FSRAILWAY_Book:Regular'] leading-[24px] not-italic relative shrink-0 text-[#4b4b4b] text-[18px] w-full whitespace-pre-wrap" data-node-id="1:795">
+                {`Начинайте игру, проходите раунды `}
+                <br aria-hidden />
+                и забирайте подарки
+              </p>
+            </div>
+          </div>
+          <div className="absolute contents left-[-47.63px] top-[290px]" data-node-id="1:796" data-name="PATTERN">
+            <div className="absolute h-[516.362px] left-[80.74px] top-[290px] w-[435.897px]" data-node-id="1:797">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgGroup16} />
+            </div>
+            <div className="absolute h-[516.362px] left-[-47.63px] top-[290px] w-[435.904px]" data-node-id="1:800">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgGroup21} />
+            </div>
+            <div className="absolute h-[516.362px] left-[181px] top-[290px] w-[435.904px]" data-node-id="1:803">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgGroup21} />
+            </div>
+            <div className="absolute h-[516.362px] left-[280px] top-[290.64px] w-[390.698px]" data-node-id="1:806">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgGroup18} />
+            </div>
+          </div>
+          <div className="absolute h-[436px] left-[60px] top-[266px] w-[390px]" data-node-id="1:809" data-name="Девушка  электромеханик - без фона (ЦБР, 2025) 0004 1">
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+              <img alt="" className="absolute h-[169.22%] left-0 max-w-none top-0 w-[99.94%]" src={img202500041} />
+            </div>
+          </div>
+        </div>
+        <div className="bg-[#242424] content-stretch flex items-center overflow-clip px-[16px] py-[24px] relative shrink-0" data-node-id="1:810">
+          <div className="content-stretch flex flex-col gap-[32px] items-start relative shrink-0 w-[343px]" data-node-id="1:811">
+            <div className="h-[26.595px] relative shrink-0 w-[120px]" data-node-id="1:812" data-name="LOGO">
+              <div className="absolute h-[25.946px] left-0 top-0 w-[42.811px]" data-node-id="1:813" data-name="rzd-logo 1">
+                <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                  <img alt="" className="absolute h-[100.05%] left-0 max-w-none top-[-0.03%] w-[277.27%]" src={imgRzdLogo1} />
+                </div>
+              </div>
+              <p className="[word-break:break-word] absolute font-['FSRAILWAY_Book:Regular'] leading-[0] left-[52.54px] not-italic text-[11.027px] text-white top-[0.65px] tracking-[0.2205px] uppercase whitespace-nowrap" data-node-id="1:814">
+                <span className="leading-[normal]">{`ДЛЯ `}</span>
+                <span className="leading-[normal] tracking-[0.48px]">Л</span>
+                <span className="leading-[normal] tracking-[0.64px]">ю</span>
+                <span className="leading-[normal]">д</span>
+                <span className="leading-[normal] tracking-[0.16px]">е</span>
+                <span className="leading-[normal]">
+                  й<br aria-hidden />Д
+                </span>
+                <span className="leading-[normal] tracking-[0.64px]">ЕЛ</span>
+                <span className="leading-[normal]">А</span>
+              </p>
+            </div>
+            <div className="[word-break:break-word] content-stretch flex flex-col gap-[16px] items-start not-italic relative shrink-0 text-white w-full" data-node-id="1:815">
+              <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0 w-full" data-node-id="1:816">
+                <p className="font-['RussianRail_G_Pro:Extended_Bold'] leading-[normal] relative shrink-0 text-[24px] uppercase w-full" data-node-id="1:817">
+                  ЖЕЛЕЗНЫе ФАКТы
+                </p>
+                <p className="font-['FSRAILWAY_Book:Regular'] leading-[22px] relative shrink-0 text-[16px] w-full" data-node-id="1:818">
+                  Интерактивный проект о людях, профессиях и технологиях РЖД
+                </p>
+              </div>
+              <div className="content-stretch flex flex-col font-['FSRAILWAY_Book:Regular'] gap-[16px] items-start leading-[0] relative shrink-0 text-[0px] w-full" data-node-id="1:819">
+                <p className="relative shrink-0 w-full" data-node-id="1:820">
+                  <span className="font-['FSRAIL_SemiBold:SemiBold'] leading-[22px] text-[16px]">Организатор акции:</span>
+                  <span className="leading-[22px] text-[16px]">
+                    <br aria-hidden />
+                    [юридическое наименование ЦПР]
+                  </span>
+                </p>
+                <p className="relative shrink-0 w-full" data-node-id="1:821">
+                  <span className="font-['FSRAIL_SemiBold:SemiBold'] leading-[22px] text-[16px]">Поддержка:</span>
+                  <span className="leading-[22px] text-[16px]">
+                    <br aria-hidden />
+                    [email]
+                  </span>
+                </p>
+              </div>
+              <div className="content-stretch flex flex-col font-['FSRAILWAY_Book:Regular'] gap-[16px] items-start justify-center leading-[22px] relative shrink-0 text-[16px] w-full" data-node-id="1:822">
+                <p className="[text-underline-position:from-font] decoration-from-font decoration-solid relative shrink-0 underline whitespace-nowrap" data-node-id="1:823">{`Правила акции `}</p>
+                <p className="[text-underline-position:from-font] decoration-from-font decoration-solid min-w-full relative shrink-0 underline w-[min-content]" data-node-id="1:824">
+                  Политика обработки персональных данных
+                </p>
+                <p className="[text-underline-position:from-font] decoration-from-font decoration-solid min-w-full relative shrink-0 underline w-[min-content]" data-node-id="1:825">
+                  Согласие на обработку персональных данных
+                </p>
+              </div>
+            </div>
+            <div className="content-stretch flex gap-[16px] items-center relative shrink-0" data-node-id="1:826">
+              <div className="relative shrink-0 size-[48px]" data-node-id="1:827" data-name="VK_Compact_Logo_(2021-present) 1">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVkCompactLogo2021Present1} />
+              </div>
+              <div className="relative shrink-0 size-[48px]" data-node-id="1:830" data-name="Telegram_2019_Logo 1">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgTelegram2019Logo1} />
+              </div>
+            </div>
+            <p className="[word-break:break-word] font-['FSRAILWAY_Book:Regular'] leading-[22px] not-italic relative shrink-0 text-[16px] text-white whitespace-nowrap" data-node-id="1:833">
+              ©2026
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+
+The generated code contains image and SVG URL constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.
